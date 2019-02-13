@@ -10,10 +10,10 @@ npm run docs:build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-echo 'www.destinytaoer.cn' > CNAME
+echo 'destinytaoer.cn' > CNAME
 
 git push origin master # 提交到 master
 
-git subtree push --prefix=docs/.vuepress/dist origin gh-pages
+git subtree push --prefix docs/.vuepress/dist origin gh-pages # 将 dist 文件提交到 gh-pages 分支
 
 cd -
