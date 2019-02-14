@@ -75,8 +75,11 @@ export default {
     posts() {
       let posts = [];
       posts = this.$site.pages.filter(item => {
-        return item.path.includes("_posts");
+        return item.path.includes("posts");
       });
+      posts.forEach((item)=>{
+        item.path = item.path.replace('/blog', '')
+      })
       posts.sort((a, b) => {
         let dateA = new Date(
           a.frontmatter.update || a.frontmatter.date
