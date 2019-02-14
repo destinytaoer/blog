@@ -78,7 +78,7 @@ export default {
         return item.path.includes("posts");
       });
       posts.forEach((item)=>{
-        item.path = item.path.replace('/blog', '')
+        item.path = item.path.replace('/blog', '.')
       })
       posts.sort((a, b) => {
         let dateA = new Date(
