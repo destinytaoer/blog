@@ -6,10 +6,6 @@ set -e
 # 生成静态文件
 yarn build
 
-# 发布到自定义域名
-cd ./dist
-echo 'destinytaoer.cn' > CNAME
-
 # 提交到历史区，$1 为运行 sh 时的第一个参数
 git add -A
 git commit -m $1

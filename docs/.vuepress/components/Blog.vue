@@ -58,11 +58,15 @@
         </article>
       </li>
     </ul>
+    <footer>
+      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    </footer>
   </div>
 </template>
 
 <script>
-import TagList from "./TagList";
+import TagList from "./common/TagList"
+import Pagination from './common/Pagination'
 export default {
   data() {
     return {};
@@ -91,8 +95,11 @@ export default {
       return date.slice(0, 10);
     }
   },
+  mounted() {
+  },
   components: {
-    TagList
+    TagList,
+    Pagination
   }
 };
 </script>

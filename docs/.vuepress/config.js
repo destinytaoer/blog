@@ -13,7 +13,7 @@ module.exports = {
       { text: '归档', link: '/archives/'},
       { text: '分类', link: '/categories/' },
       { text: '标签', link: '/tags/' },
-      { text: '语雀', link: ''},
+      { text: '语雀', link: 'https://www.yuque.com/destinytaoer/'},
       { text: '关于我', link: '/about/' }
     ],
     
@@ -41,7 +41,8 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
-    editLinkText: '编辑此页面'
+    editLinkText: '编辑此页面',
+    lastUpdated: '上次更新时间', // string | boolean
   },
   // 语言配置
   locales: {
@@ -50,5 +51,25 @@ module.exports = {
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
     }
-  }
+  },
+  postsDir: '/blog/_posts/',
+  categoryIndexPageUrl: '/categories/',
+  tagIndexPageUrl: '/tags/',
+  permalink: "/:year/:month/:slug",
+  postsFilter: (({ type }) => type === 'post'),
+  postsSorter: ((prev, next) => {
+    const prevTime = new Date(prev.frontmatter.date).getTime()
+    const nextTime = new Date(next.frontmatter.date).getTime()
+    return prevTime - nextTime > 0 ? -1 : 1
+  }),
+  ga: 'UA-134526816-1',
+  selector: '.content img',
+  serviceWorker: true,
+  updatePopup: {
+    message: '有内容更新',
+    buttonText: '刷新'
+  },
+  popupComponent: undefined,
+  plugins: [
+  ]
 }

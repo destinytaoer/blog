@@ -1,6 +1,6 @@
 <template>
-  <div class="name">
-    
+  <div class="about">
+    <Content></Content>
   </div>
 </template>
 
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.about {
+  
+}
 </style>
