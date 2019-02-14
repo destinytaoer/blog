@@ -4,16 +4,22 @@
 set -e
 
 # 生成静态文件
-npm run docs:build
+yarn build
 
-# 进入生成的文件夹
-cd docs/.vuepress/dist
-
-# 如果是发布到自定义域名
+# 发布到自定义域名
+cd ./dist
 echo 'destinytaoer.cn' > CNAME
 
-git push origin master # 提交到 master
+# 提交到历史区，$1 为运行 sh 时的第一个参数
+git add -A
+git commit -m $1
 
-git subtree push --prefix docs/.vuepress/dist origin gh-pages # 将 dist 文件提交到 gh-pages 分支
+# 将 dist 文件提交到 gh-pages 分支
+git subtree push --prefix dist origin gh-pages 
+
+# 提交到 master
+git push origin master 
 
 cd -
+
+exit 0
