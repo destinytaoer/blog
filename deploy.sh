@@ -19,6 +19,4 @@ git push origin gh-pages:gh-pages
 
 git push origin master:master
 
-cd -
-
 exit 0

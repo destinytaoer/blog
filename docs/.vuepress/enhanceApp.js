@@ -57,7 +57,6 @@ function bsz() {
         this.bszs.map(function (b) {
           var c = document.getElementById("busuanzi_value_" + b);
           c && (c.innerHTML = a[b])
-          console.log(a[b]);
         })
       },
       hides: function () {
