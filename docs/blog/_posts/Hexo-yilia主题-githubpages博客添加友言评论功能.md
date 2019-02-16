@@ -1,14 +1,14 @@
 ---
 title: Hexo + yilia主题 + githubpages博客添加友言评论功能
-categories: 博客建站
+category: 博客建站
 tags:
   - hexo
   - github
   - yilia
-copyright: true
-comments: true
 date: 2017-09-19 12:48:41
 update: 2017-09-20 22:48:41
+copyright: true
+comments: true
 ---
 
 ## 前言

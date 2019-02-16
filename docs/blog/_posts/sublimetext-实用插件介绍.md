@@ -1,14 +1,15 @@
 ---
 title: Sublime Text 实用插件介绍
-categories: 资源分享
+layout: post
+category: 资源分享
 tags:
   - web前端
   - sublimetext
   - 编辑器
-comments: true
-copyright: true
 date: 2017-09-23 19:09:24
 update: 2017-09-23 19:09:24
+comments: true
+copyright: true
 ---
 
 ## 前言

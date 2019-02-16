@@ -1,16 +1,17 @@
 ---
 title: CSS实现元素的居中显示
-comments: true
-copyright: true
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - web前端
   - css
 date: 2017-10-17 23:26:12
 update: 2017-10-18 23:18:12
+comments: true
+copyright: true
 ---
 
-# 前言
+## 前言
 元素的水平及垂直居中是在写CSS样式中最常遇到的问题之一。相信会CSS的同学肯定都有自己的解决方法，但是并不一定都能熟练运用，并且知道其中原理。下面，我就将自己总结的实现方法分享给大家。
 ps：重点是第四，疑惑在第三，第一、第二也较常用
 
@@ -18,7 +19,7 @@ ps：重点是第四，疑惑在第三，第一、第二也较常用
 
 <!-- more -->
 
-# 一、单行文本
+## 一、单行文本
 
 这里的单行文本不仅是指单行显示的文本以及**行内元素**（设置了`display: inline;`的也是行内元素），当然这些元素也只有包含文本才有意义，才能显示出来。
 
@@ -35,7 +36,7 @@ div {
 
 >具体原因请参考文章：[对文字和行高的理解](http://www.jianshu.com/p/dc324a36ba84)
 
-# 二、多行文本
+## 二、多行文本
 
 这里的多行文本，实际上应该说是**不定行**，这个方法能自适应的居中。
 
@@ -50,7 +51,7 @@ div {
 这里设置`table-cell`，创建类似表格单元的元素，就可以使用`vertical-align`设置垂直对齐方式。
 >**注意**：在一些文章中，我看到还需要设置其子元素的`vertical-align`，但是在实践中发现并不需要。与下面使用`table-cell`的方法有所区别
 
-# 三、图片
+## 三、图片
 这里图片泛指**行内块元素**
 - ### table-cell + vertical-align 
 ```css
@@ -87,9 +88,9 @@ img{
 
 - ### 其他方法参照下面的块元素实现
 
-# 四、盒子
+## 四、盒子
 盒子主要指**块元素**和**行内块**，下面分享的是布局中主要用到的。`margin: 0 auto`就不做介绍了。
-## 1. position + 负margin
+### 1. position + 负margin
 ```css
 /* 父元素 */
 .demo{
@@ -108,7 +109,7 @@ img{
 ```
 利用`position`移动父元素宽高的一半，再利用负`margin`往回移动子元素宽高的一半，刚好居中对齐。适合固定宽高的元素。
 
-## 2.position + translate
+### 2.position + translate
 ```css
 /* 父元素 */
 .demo{
@@ -124,10 +125,10 @@ img{
 ```
 同上理，这里利用`translate3d`往回移动。子元素不固定宽高也适用。
 
-## 3. table-cell + vertical-align
+### 3. table-cell + vertical-align
 这就是前面图片提到的方法，只不过要设置子元素为`display: inline-block;`
 
-## 4. flex
+### 4. flex
 这才是真正的布局神器。适用于所有，但也需要灵活应用。
 ```css
 .demo {
@@ -139,4 +140,4 @@ img{
 简洁、高效，在低版本IE存在兼容问题，但是现在几乎不用考虑了。
 >详细语法请查看我的博文：[关于Flex布局](http://www.jianshu.com/p/90dbbbecdf3b)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

@@ -1,12 +1,12 @@
 <template>
-  <ul class="article-tag-list">
+  <ul class="tag-list">
     <li
-      class="article-tag-list-item"
+      class="tag-list-item"
       v-for="(tag, index) in tags"
       :key="index"
     >
       <a
-        class="article-tag-list-link waves-effect waves-button"
+        class="tag-list-link waves-effect waves-button"
         :href="'/tags/'+tag+'/'"
       >{{tag}}</a>
     </li>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.article-tag-list {
+.tag-list {
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ export default {
   @tag-color-5: rgb(241, 241, 215);
   @tag-color-6: rgb(221, 221, 220);
 
-  .article-tag-list-item {
+  .tag-list-item {
     display: inline-block;
     margin: 0 8px 8px 0;
     border-radius: 2px;
@@ -62,7 +62,7 @@ export default {
     }
   }
 
-  .article-tag-list-link {
+  .tag-list-link {
     display: block;
     padding: 0 16px;
     line-height: 28px;

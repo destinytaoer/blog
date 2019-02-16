@@ -1,14 +1,15 @@
 ---
 title: hexo + next主题高级配置
-comments: true
-copyright: true
-categories: 博客建站
+layout: post
+category: 博客建站
 tags:
   - hexo
   - next
   - github
 date: 2017-09-20 18:20:55
 update: 2017-10-14 14:30:55
+comments: true
+copyright: true
 ---
 
 ## 前言

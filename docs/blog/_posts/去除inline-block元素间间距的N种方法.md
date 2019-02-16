@@ -1,13 +1,14 @@
 ---
 title: 去除inline-block元素间间距的N种方法
-comments: true
-copyright: false
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - css
   - web前端
 date: 2017-08-09 15:54:38
 update: 2017-08-09 15:54:38
+comments: true
+copyright: false
 ---
 
 ## 一、现象描述

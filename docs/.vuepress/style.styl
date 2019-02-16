@@ -1,1 +1,22 @@
 // 覆盖样式
+@import '/font/iconfont.css'
+.theme-container
+  display flex
+  min-height 100vh
+  flex-direction column
+
+.home, .custom-layout, .page
+  flex 1
+
+.fix-footer
+  height: 7.2rem
+  text-align center
+  &.post-footer {
+    padding-left: 20rem;
+  }
+
+@media screen and (max-width: 719px) {
+  .fix-footer.post-footer {
+    padding-left: 0;
+  }
+}

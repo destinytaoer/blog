@@ -1,14 +1,16 @@
 ---
 title: gulp 自动化构建工具
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - gulp
   - web前端
-comments: true
-copyright: true
 date: 2017-07-26 14:59:17
 update: 2017-07-26 14:59:17
+comments: true
+copyright: true
 ---
+
 ## 前言
 
 ### gulp简介

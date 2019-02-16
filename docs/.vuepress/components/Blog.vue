@@ -3,7 +3,7 @@
     <ul class="post-list">
       <li
         class="post-list-item fade"
-        v-for="post in posts"
+        v-for="post in $posts"
       >
         <article
           :id="'post-' + post.title"
@@ -53,9 +53,6 @@
         </article>
       </li>
     </ul>
-    <footer>
-      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-    </footer>
   </div>
 </template>
 
@@ -67,30 +64,12 @@ export default {
     return {};
   },
   computed: {
-    posts() {
-      let posts = [];
-      posts = this.$site.pages.filter(item => {
-        return item.path.includes("_posts");
-      });
-      posts.sort((a, b) => {
-        let dateA = new Date(
-          a.frontmatter.update || a.frontmatter.date
-        ).getTime();
-        let dateB = new Date(
-          b.frontmatter.update || b.frontmatter.date
-        ).getTime();
-        return dateB - dateA;
-      });
-      console.log(posts);
-      return posts;
-    }
+    
   },
   methods: {
     formatDate(date) {
       return date.slice(0, 10);
     }
-  },
-  mounted() {
   },
   components: {
     TagList,

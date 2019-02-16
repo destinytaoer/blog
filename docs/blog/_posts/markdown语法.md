@@ -1,12 +1,13 @@
 ---
 title: Markdown学习总结
-categories: 博客建站
+layout: post
+category: 博客建站
 tags:
   - markdown
-comments: true
-copyright: true
 date: 2017-07-28 18:10:24
 update: 2017-07-28 18:10:24
+comments: true
+copyright: true
 ---
 
 ## 一、 markdown简介

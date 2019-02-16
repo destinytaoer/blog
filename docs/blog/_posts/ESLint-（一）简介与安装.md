@@ -1,14 +1,15 @@
 ---
 title: ESLint （一）简介与安装
-comments: true
-copyright: true
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - web前端
   - javascript
   - 编码规范
 date: 2017-11-30 22:25:05
 update: 2017-11-30 22:25:05
+comments: true
+copyright: true
 ---
 
 ![](http://upload-images.jianshu.io/upload_images/7295449-fc178e0811917b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

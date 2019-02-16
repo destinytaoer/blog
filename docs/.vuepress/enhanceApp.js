@@ -1,91 +1,52 @@
-function bsz() {
-  var bszCaller, bszTag, ready, scriptTag;
-  ! function () {
-    var c, d, e, a = !1,
-      b = [];
-    ready = function (c) {
-      return a || "interactive" === document.readyState || "complete" === document.readyState ? c.call(document) : b.push(function () {
-        return c.call(this)
-      }), this
+import moment from 'moment'
+const dataMixin = {
+  computed: {
+    $posts () {
+      const pages = this.$site.pages
+      const pageFilter = p => p.frontmatter.layout === 'post'
+      const pageSort = (p1, p2) => {
+        let dateA = new Date(p1.updatedAt).getTime()
+        let dateB = new Date(p2.updatedAt).getTime()
+        return dateB - dateA;
+      }
+      const pageMap = p => {
+        p.createdAt = moment(p.frontmatter.date).format('YYYY-MM-DD')
+        let updatedAt = p.frontmatter.update || p.frontmatter.date
+        p.updatedAt = moment(updatedAt).format('YYYY-MM-DD')
+        p.tags = p.frontmatter.tags || []
+        p.category = p.frontmatter.category || null
+        return p
+      }
+      const posts = pages.filter(pageFilter).map(pageMap).sort(pageSort)
+      console.log(posts);
+      return posts
     },
-    d = function () {
-      for (var a = 0, c = b.length; c > a; a++) b[a].apply(document);
-      b = []
-    },
-    e = function () {
-      a || (a = !0, d.call(window),
-      document.removeEventListener ? document.removeEventListener("DOMContentLoaded", e, !1) : document.attachEvent && (document.detachEvent("onreadystatechange", e), window == window.top && (clearInterval(c), c = null)))
-      },
-      document.addEventListener ? document.addEventListener("DOMContentLoaded", e, !1) :
-      document.attachEvent && (document.attachEvent("onreadystatechange", function () {
-        /loaded|complete/.test(document.readyState) && e()
-      }),
-      window == window.top && (
-        c = setInterval(function () {
-          try {
-            a || document.documentElement.doScroll("left")
-          } catch (b) {
-            return
-          }
-          e()
-        }, 5))
-      )
-    }(),
-    bszCaller = {
-      fetch: function (a, b) {
-        var c = "BusuanziCallback_" + Math.floor(1099511627776 * Math.random());
-        window[c] = this.evalCall(b), a = a.replace("=BusuanziCallback", "=" + c), scriptTag = document.createElement("SCRIPT"), scriptTag.type = "text/javascript", scriptTag.defer = !0, scriptTag.src = a, document.getElementsByTagName("HEAD")[0].appendChild(scriptTag)
-      },
-      evalCall: function (a) {
-        return function (b) {
-          ready(function () {
-            try {
-              a(b), scriptTag.parentElement.removeChild(scriptTag)
-            } catch (c) {
-              bszTag.hides()
-            }
-          })
+
+    $categories () {
+      let categoriesSet = new Set()
+      for (const post of this.$posts) {
+        if (post.category) {
+          categoriesSet.add(post.category)
         }
       }
+      return Array.from(categoriesSet)
     },
-    bszCaller.fetch("//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", function (a) {
-      bszTag.texts(a), bszTag.shows()
-    }),
-    bszTag = {
-      bszs: ["site_pv", "page_pv", "site_uv"],
-      texts: function (a) {
-        this.bszs.map(function (b) {
-          var c = document.getElementById("busuanzi_value_" + b);
-          c && (c.innerHTML = a[b])
-        })
-      },
-      hides: function () {
-        this.bszs.map(function (a) {
-          var b = document.getElementById("busuanzi_container_" + a);
-          b && (b.style.display = "none")
-        })
-      },
-      shows: function () {
-        this.bszs.map(function (a) {
-          var b = document.getElementById("busuanzi_container_" + a);
-          b && (b.style.display = "inline")
-        })
-      }
-    };
-}
 
+    $tags () {
+      let tagsArr = []
+      for (const post of this.$posts) {
+        tagsArr = tagsArr.concat(post.tags)
+      }
+      return Array.from(new Set(tagsArr))
+    },
+  },
+}
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项
   router, // 当前应用的路由实例
   siteData // 站点元数据
 }) => {
-  try {
-    // 生成静态页时在node中执行，没有document对象
-    console.log('enhance');
-    bsz()
-  } catch (e) {
-    console.error(e.message)
-  }
+  Vue.mixin(dataMixin)
   // ...做一些其他的应用级别的优化
 }

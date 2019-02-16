@@ -1,13 +1,14 @@
 ---
 title: html语义化
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - web前端
   - html
-copyright: true
-comments: true
 date: 2016-12-12 08:39:24
 update: 2017-03-12 16:39:24
+copyright: true
+comments: true
 ---
 
 ## 前言

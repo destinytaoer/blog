@@ -1,13 +1,14 @@
 ---
 title: githubpages + hexo 搭建个人博客
-categories: 博客建站
+layout: post
+category: 博客建站
 tags:
   - hexo
   - github
-comments: true
-copyright: true
 date: 2017-09-18 21:15:58
 update: 2017-10-14 12:15:58
+comments: true
+copyright: true
 ---
 
 ## 前言

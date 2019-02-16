@@ -1,16 +1,17 @@
 ---
 title: Hello World！
-categories: 个人随笔
+layout: post
+category: 个人随笔
 tags:
-  - 博文前言
-copyright: true
-comments: true
+  - 博客版本更迭
 date: 2017-09-18 11:05:15
 update: 2018-08-04 09:29:15
+copyright: true
+comments: true
 ---
 
 ![](https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=8120f1aa4d4a20a425133495f13bf347/3b87e950352ac65cd20ecfcbf9f2b21193138a7b.jpg)
-# 前言
+## 前言
 
 > 老师告诉我，让我写下第一个程序：Hello World！
 > 当时很疑惑，问老师，为什么是“Hello World”？
@@ -21,7 +22,7 @@ update: 2018-08-04 09:29:15
 <!-- more -->
 
 
-# 博客介绍
+## 博客介绍
 
 - 博客名：destiny'Note
 - 博主：[destiny](http://destinytaoer.cn/about/)

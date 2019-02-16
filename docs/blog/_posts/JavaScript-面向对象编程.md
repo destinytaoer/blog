@@ -1,13 +1,14 @@
 ---
 title: JavaScript 面向对象编程
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - web前端
   - javascript
-copyright: false
-comments: true
 date: 2017-09-14 18:53:43
 update: 2017-09-14 18:53:43
+copyright: false
+comments: true
 ---
 
 >引自：阮一峰的博客

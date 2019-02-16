@@ -1,13 +1,14 @@
 ---
 title: Transform 引起的 z-index "失效"
-comments: true
-copyright: true
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - css
   - web前端
 date: 2017-10-12 18:31:44
 update: 2017-10-12 18:31:44
+comments: true
+copyright: true
 ---
 
 ## 前言

@@ -3,10 +3,12 @@ module.exports = {
   description: "生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。",
   base: '/',
   dest: './dist/',
+  lang: 'zh-CN',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
+    logo: '/logo.jpg',
     // 顶部导航
     nav: [
       { text: '博客', link: '/blog/' },

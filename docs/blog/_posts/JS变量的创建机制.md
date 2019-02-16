@@ -1,16 +1,17 @@
 ---
 title: JS变量的创建机制
-categories: 前端技术
+layout: post
+category: 前端技术
 tags:
   - web前端
   - JavaScript
-comments: true
-copyright: true
 date: 2018-07-04 10:44:57
 update: 2018-08-05 20:57:57
+comments: true
+copyright: true
 ---
 
-# 前言
+## 前言
 JS 怎么创建变量？相信大家都会：
 ``` javascript
 var a;
@@ -22,7 +23,7 @@ function b(){}
 这次，就聊一聊 JS 的堆栈内存和变量的创建机制。（这里只介绍 ES5 的机制）
 
 <!-- more -->
-# 1. 堆栈内存
+## 1. 堆栈内存
 在了解变量创建机制之前，先来了解一下变量的存储空间。
 
 存储空间分为栈内存和堆内存。
@@ -37,7 +38,7 @@ function b(){}
 
 由于引用类型的值可能过于复杂，所以需要另外开辟空间来存储，而变量中存储的只是指向这个空间的地址。
 
-# 2. 变量的创建
+## 2. 变量的创建
 
 （1）创建作用域
 当浏览器（内核/引擎）渲染和解析 JS 代码的时候，会提供一个供 JS 代码运行的环境，这个环境称为“全局作用域”（global / window scope），是一个栈内存

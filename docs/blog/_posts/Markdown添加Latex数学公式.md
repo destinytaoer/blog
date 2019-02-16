@@ -1,15 +1,16 @@
 ---
 title: Markdown添加Latex数学公式
-comments: true
-copyright: true
-categories: 前端技术
+layout: post
+category: 前端技术
 tags: 
 - markdown
 date: 2017-12-09 21:05:22
 update: 2018-08-05 20:16:03
+comments: true
+copyright: true
 ---
 
-# 前言
+## 前言
 在编辑文章的时候，经常都会有使用数学公式的需求。我查找到一篇文章，总结的比较好，在这里跟你们分享。
 
 > 需要注意的是，想要在 Markdown 中使用这些数学公式，需要你的编辑器支持这个功能。这里介绍的就是其中一种：Latex。
@@ -18,7 +19,7 @@ update: 2018-08-05 20:16:03
 Markdown 添加 Latex 数学公式](https://blog.csdn.net/destinytaoer/article/details/78761520)
 
 <!-- more -->
-# Markdown 中添加公式
+## Markdown 中添加公式
 行内公式
 ```
 $行内公式$
@@ -32,10 +33,10 @@ $$
 ```
 
 
-# Latex 数学公式语法
+## Latex 数学公式语法
 
 
-## 角标（上下标）
+### 角标（上下标）
 
 **上标**
 ```
@@ -95,7 +96,7 @@ $$
 
 第一种输出为正常输出，但输出效果不明显；第二种是将一级角标改为二级角标，字体也自动变为二级角标字体；第三种将一级角标改为二级角标，但是强制字体改为一级角标字体。
 
-## 分式
+### 分式
 
 **分式命令**
 ```
@@ -146,7 +147,7 @@ $$
 
 其中第一个显示是正常的显示，第二个显示是分子分母前后都放入一个间隔命令 `\;` 中
 
-## 根式
+### 根式
 
 **二次根式命令**
 ```
@@ -178,7 +179,7 @@ $$
 注意比较两个根式开方次数的显示位置
 
 
-## 求和与积分
+### 求和与积分
 
 **求和命令**
 ```
@@ -215,7 +216,7 @@ $$
 $\int\limits_0^\infty e^x$ 和 $\int\nolimits_0^\infty e^x$
 
 
-## 上、下划线
+### 上、下划线
 
 **上划线命令**
 ```
@@ -235,7 +236,7 @@ $\int\limits_0^\infty e^x$ 和 $\int\nolimits_0^\infty e^x$
 $$\overline{\overline{a^2}+\underline{ab}+\bar{a}^3}$$
 
 
-## 上、下括弧
+### 上、下括弧
 
 **上花括弧命令**
 ```
@@ -255,7 +256,7 @@ $$\overline{\overline{a^2}+\underline{ab}+\bar{a}^3}$$
 $$\underbrace{a+\overbrace{b+\dots+b}^{m\mbox{\tiny 个}}}_{20\mbox{\scriptsize 个}}$$
 
 
-## 数学重音符号
+### 数学重音符号
 
 这里以 `a` 为例，如果是字母 `i` 或 `j` 带有重音，应该替换为`\imath`、`\jmath`
 
@@ -287,7 +288,7 @@ $$
 \ddot{a}
 $$
 
-## 堆积符号
+### 堆积符号
 
 - `\stacrel{上位符号}{基位符号}` 基位符号大，上位符号小
 - `{上位公式\atop 下位公式}` 上下符号一样大
@@ -301,7 +302,7 @@ $$
  \vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}\\ {n+1 \choose k}={n \choose k}+{n \choose k-1}\\ \sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots 
 $$
 
-## 定界符
+### 定界符
 ```
 ()\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)
 \big(\Big) \bigg(\Bigg)
@@ -329,7 +330,7 @@ $$
 $$
 
 
-## 占位宽度
+### 占位宽度
 
 - 两个 quad 空格 `\qquad`， 两个 m 的宽度：$a \qquad b$
 - 一个 quad 空格 ` \quad`， 一个m的宽度：$a \quad b$
@@ -341,7 +342,7 @@ $$
 
 `\quad` 代表当前字体下接近字符‘M’的宽度（approximately the width of an "M" in the current font）
 
-## 集合相关的运算命令
+### 集合相关的运算命令
 
 **集合的大括号**
 ```
@@ -462,7 +463,7 @@ $$
 $$
 
 
-# 引自
+## 引自
 > 引自：[Markdown 添加 Latex 数学公式](https://www.cnblogs.com/peaceWang/p/Markdown-tian-jia-Latex-shu-xue-gong-shi.html#toc_1)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
