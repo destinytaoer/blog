@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{185:function(t,e,n){"use strict";n.r(e);var s={data:function(){return{}}},a=n(0),c=Object(a.a)(s,function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"quote-center"})},[],!1,null,"97be1064",null);e.default=c.exports}}]);
