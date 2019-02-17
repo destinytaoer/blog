@@ -33,7 +33,7 @@ copyright: true
 **ppi 越高，像素数越高，图像越清晰。**
 **Retina屏即高清屏，dpr 大于等于 2。**
 
-![](http://upload-images.jianshu.io/upload_images/7295449-25570b746afcccd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-25570b746afcccd5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 二、viewport 
 
@@ -83,6 +83,6 @@ web初期，网页渲染在手机上，会只显示页面的其中一部分。�
 
 
 ## 参考
->慕课网教程：[Hello，移动WEB](http://www.imooc.com/learn/494)
+>慕课网教程：[Hello，移动WEB](https://www.imooc.com/learn/494)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

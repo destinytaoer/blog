@@ -14,7 +14,7 @@ copyright: true
 ## 前言
 
 在重新学习css，做自己的学习demo时，设置一堆div在一行显示，呈现对比。
-![](http://upload-images.jianshu.io/upload_images/7295449-645cd42dd9f41dea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-645cd42dd9f41dea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 结果如图，设置了`display:inline-block`之后，出现了部分下沉现象。
 改为`float`之后，又恢复正常对齐。
@@ -27,9 +27,9 @@ copyright: true
 ### 原因
 #### 1. 行内元素有一个基线，所有在这一行中的元素都以这条基线为准对齐。
 如文字：
-![](http://upload-images.jianshu.io/upload_images/7295449-4952b99592ab7302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-4952b99592ab7302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 而行内块元素，如图片等，会以底部为准对齐：
-![](http://upload-images.jianshu.io/upload_images/7295449-8ca4720b6246b9de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-8ca4720b6246b9de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 2. 文本在容器中默认是上对齐的，且不能设置其他垂直对齐方式
 要设置垂直居中之类的，只能用p标签或者其他标签包含之后，设置这些标签的对齐方式
@@ -44,7 +44,7 @@ copyright: true
 display: inline-block;
 verticla-align: top;
 ```
->[CSS vertical-align 属性](http://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp)
+>[CSS vertical-align 属性](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp)
 
 
 #### 2. 使用``float``等其他方法替换`inline-block`
@@ -55,7 +55,7 @@ verticla-align: top;
 ### 原因
 行内块元素或者设置成`inline-block`的元素之间，会自动存在间距。
 
-![](http://upload-images.jianshu.io/upload_images/7295449-0a1875e35ac9b536.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-0a1875e35ac9b536.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 这种表现是符合规范的应该有的表现。但是，在某些情况却会对我们的布局造成影响。
 
 ### 解决方法
@@ -67,8 +67,8 @@ verticla-align: top;
 }
 ```
 
-margin负值的大小与上下文的字体和文字大小相关，其中，间距对应大小值可以参见“[基于display:inline-block的列表布局](http://www.zhangxinxu.com/wordpress/?p=1194)”一文part 6的统计表格：
-![inline-block元素间间隔大小与字体和文字大小之前的关系表截图](http://upload-images.jianshu.io/upload_images/7295449-31a1fde60a029299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+margin负值的大小与上下文的字体和文字大小相关，其中，间距对应大小值可以参见“[基于display:inline-block的列表布局](https://www.zhangxinxu.com/wordpress/?p=1194)”一文part 6的统计表格：
+![inline-block元素间间隔大小与字体和文字大小之前的关系表截图](https://upload-images.jianshu.io/upload_images/7295449-31a1fde60a029299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 例如，对于12像素大小的上下文，Arial字体的`margin`负值为`-3`像素，Tahoma和Verdana就是`-4`像素，而Geneva为`-6`像素。
 由于外部环境的不确定性，以及最后一个元素多出的父margin值等问题，这个方法不适合大规模使用。
@@ -92,7 +92,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 }
 ```
 
->点击这里查看示例：[font-size:0清除换行符间隙demo](http://www.zhangxinxu.com/study/201011/img-font-size-clear-blank.html)
+>点击这里查看示例：[font-size:0清除换行符间隙demo](https://www.zhangxinxu.com/study/201011/img-font-size-clear-blank.html)
 
 **补充：**目前Chrome浏览器已经取消了最小字体限制。因此，上面的-webkit-text-size-adjust:none;代码估计时日不多了。
 
@@ -122,7 +122,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 
 一个是字符间距`letter-spacing`,一个是单词间距`word-spacing`，大同小异。据我测试，`word-spacing`的负值只要大到一定程度，其兼容性上的差异就可以被忽略。因为，貌似，word-spacing即使负值很大，也不会发生重叠。
 
->点击这里查看示例：[word-spacing与元素间距去除demo](http://www.zhangxinxu.com/study/201204/inline-block-space-word-spacing.html)
+>点击这里查看示例：[word-spacing与元素间距去除demo](https://www.zhangxinxu.com/study/201204/inline-block-space-word-spacing.html)
 
 您使用Chrome浏览器，可能看到的是间距依旧存在。确实是有该问题，原因我是不清楚，不过我知道，可以添加`display: table;`或`display:inline-table;`让Chrome浏览器也变得乖巧。
 ```css
@@ -132,7 +132,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 }
 ```
 #### 5. 其他成品方法
-下面展示的是[YUI 3 CSS Grids ](http://yuilibrary.com/yui/docs/cssgrids/)使用`letter-spacing`和`word-spacing`去除格栅单元见间隔方法（注意，其针对的是block水平的元素，因此对IE8-浏览器做了hack处理）：
+下面展示的是[YUI 3 CSS Grids ](https://yuilibrary.com/yui/docs/cssgrids/)使用`letter-spacing`和`word-spacing`去除格栅单元见间隔方法（注意，其针对的是block水平的元素，因此对IE8-浏览器做了hack处理）：
 ```css
 .yui3-g {
     letter-spacing: -0.31em;/* webkit */
@@ -149,7 +149,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 }
 ```
 
-以下是一个名叫[RayM](http://raym31.home.comcast.net/)的人提供的方法：
+以下是一个名叫[RayM](https://raym31.home.comcast.net/)的人提供的方法：
 ```css
 li {
     display:inline-block;
@@ -170,7 +170,7 @@ ul {
 也就是上面一系列CSS方法的组组合合。
 
 ## 感谢
->[去除inline-block元素间间距的N种方法](http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/)
-[inline-block之后意外发现块下沉](http://blog.csdn.net/qq_27545151/article/details/48598397)
+>[去除inline-block元素间间距的N种方法](https://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/)
+[inline-block之后意外发现块下沉](https://blog.csdn.net/qq_27545151/article/details/48598397)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

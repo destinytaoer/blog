@@ -36,9 +36,9 @@ copyright: false
 </div>
 ```
 
-![](http://upload-images.jianshu.io/upload_images/7295449-8ae114fa31419b20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-8ae114fa31419b20.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
->点击这里看示例：[inline-block元素间间距demo](http://www.zhangxinxu.com/study/201204/inline-block-space-example.html)
+>点击这里看示例：[inline-block元素间间距demo](https://www.zhangxinxu.com/study/201204/inline-block-space-example.html)
 
 这种表现是符合规范的应该有的表现。
 不过，这类间距有时会对我们布局，或是兼容性处理产生影响，需要去掉它，该怎么办呢？以下展示N种方法（欢迎补充）！
@@ -80,8 +80,8 @@ copyright: false
 }
 ```
 
-margin负值的大小与上下文的字体和文字大小相关，其中，间距对应大小值可以参见“[基于display:inline-block的列表布局](http://www.zhangxinxu.com/wordpress/?p=1194)”一文part 6的统计表格：
-![inline-block元素间间隔大小与字体和文字大小之前的关系表截图](http://upload-images.jianshu.io/upload_images/7295449-31a1fde60a029299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+margin负值的大小与上下文的字体和文字大小相关，其中，间距对应大小值可以参见“[基于display:inline-block的列表布局](https://www.zhangxinxu.com/wordpress/?p=1194)”一文part 6的统计表格：
+![inline-block元素间间隔大小与字体和文字大小之前的关系表截图](https://upload-images.jianshu.io/upload_images/7295449-31a1fde60a029299.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 例如，对于12像素大小的上下文，Arial字体的`margin`负值为`-3`像素，Tahoma和Verdana就是`-4`像素，而Geneva为`-6`像素。
 由于外部环境的不确定性，以及最后一个元素多出的父margin值等问题，这个方法不适合大规模使用。
@@ -110,9 +110,9 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 
 好吧，虽然感觉上有点怪怪的，但是，这是OK的。
 
->点击这里查看示例：[无闭合标签去除inline-block元素间距demo](http://www.zhangxinxu.com/study/201204/inline-block-space-skip-close-tag.html)
+>点击这里查看示例：[无闭合标签去除inline-block元素间距demo](https://www.zhangxinxu.com/study/201204/inline-block-space-skip-close-tag.html)
 
-![无闭合标签与inline-block水平元素间距的去除](http://upload-images.jianshu.io/upload_images/7295449-cf2cd33ac8a958a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![无闭合标签与inline-block水平元素间距的去除](https://upload-images.jianshu.io/upload_images/7295449-cf2cd33ac8a958a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 五、使用font-size:0
 类似下面的代码：
@@ -133,7 +133,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 }
 ```
 
->点击这里查看示例：[font-size:0清除换行符间隙demo](http://www.zhangxinxu.com/study/201011/img-font-size-clear-blank.html)
+>点击这里查看示例：[font-size:0清除换行符间隙demo](https://www.zhangxinxu.com/study/201011/img-font-size-clear-blank.html)
 
 **补充：**根据小杜在评论中中的说法，目前Chrome浏览器已经取消了最小字体限制。因此，上面的-webkit-text-size-adjust:none;代码估计时日不多了。
 
@@ -163,7 +163,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 
 一个是字符间距`letter-spacing`,一个是单词间距`word-spacing`，大同小异。据我测试，`word-spacing`的负值只要大到一定程度，其兼容性上的差异就可以被忽略。因为，貌似，word-spacing即使负值很大，也不会发生重叠。
 
->点击这里查看示例：[word-spacing与元素间距去除demo](http://www.zhangxinxu.com/study/201204/inline-block-space-word-spacing.html)
+>点击这里查看示例：[word-spacing与元素间距去除demo](https://www.zhangxinxu.com/study/201204/inline-block-space-word-spacing.html)
 
 您使用Chrome浏览器，可能看到的是间距依旧存在。确实是有该问题，原因我是不清楚，不过我知道，可以添加`display: table;`或`display:inline-table;`让Chrome浏览器也变得乖巧。
 ```css
@@ -174,7 +174,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 ```
 
 ## 八、其他成品方法
-下面展示的是[YUI 3 CSS Grids ](http://yuilibrary.com/yui/docs/cssgrids/)使用`letter-spacing`和`word-spacing`去除格栅单元见间隔方法（注意，其针对的是block水平的元素，因此对IE8-浏览器做了hack处理）：
+下面展示的是[YUI 3 CSS Grids ](https://yuilibrary.com/yui/docs/cssgrids/)使用`letter-spacing`和`word-spacing`去除格栅单元见间隔方法（注意，其针对的是block水平的元素，因此对IE8-浏览器做了hack处理）：
 ```css
 .yui3-g {
     letter-spacing: -0.31em;/* webkit */
@@ -191,7 +191,7 @@ margin负值的大小与上下文的字体和文字大小相关，其中，间�
 }
 ```
 
-以下是一个名叫[RayM](http://raym31.home.comcast.net/)的人提供的方法：
+以下是一个名叫[RayM](https://raym31.home.comcast.net/)的人提供的方法：
 ```css
 li {
     display:inline-block;
@@ -212,7 +212,7 @@ ul {
 也就是上面一系列CSS方法的组组合合。
 
 # 引自
-> 原文转自：[[张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)](http://www.zhangxinxu.com/)
-  本文地址：[去除inline-block元素间间距的N种方法](http://www.zhangxinxu.com/wordpress/?p=2357)
+> 原文转自：[[张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/)](https://www.zhangxinxu.com/)
+  本文地址：[去除inline-block元素间间距的N种方法](https://www.zhangxinxu.com/wordpress/?p=2357)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

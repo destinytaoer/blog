@@ -1,119 +1,136 @@
 <template>
-  <div class="pagination">
-
+  <div class="pagination" v-if="total > 1">
+    <span v-if="current > 1" class="item">
+        <router-link :to="`${basePath}?index=${current - 1}`" v-html="prevText" class="link"></router-link>
+    </span>
+    <ul class="numList" v-if="total <= pageRange">
+      <li class="item" v-for="index in total">
+        <router-link :to="`${basePath}?index=${index}`" :class="['link',index===current ? 'active' : '']">{{index}}</router-link>
+      </li>
+    </ul>
+    <ul class="numList" v-else>
+      <li v-if="current - l > 1" class="item">
+        <router-link :to="`${basePath}?index=1`" :class="['link',1===current ? 'active' : '']">1</router-link>
+      </li>
+      <li v-if="current - l > 2" class="item">
+        <span class="split">•••</span>
+      </li>
+      <li class="item" v-for="index in numArr">
+        <router-link :to="`${basePath}?index=${index}`" :class="['link',index ===current ? 'active' : '']">{{index}}</router-link>
+      </li>
+      <li v-if="current + r < total - 1" class="item">
+        <span class="split">•••</span>
+      </li>
+      <li v-if="current + r < total" class="item">
+        <router-link :to="`${basePath}?index=${total}`" :class="['link',total===current ? 'active' : '']">{{total}}</router-link>
+      </li>
+    </ul>
+    <span v-if="current < total" class="item">
+      <router-link :to="`${basePath}?index=${current + 1}`" v-html="nextText" class="link"></router-link>
+    </span>
   </div>
 </template>
 
 <script>
 export default {
+  props:{
+    basePath: {
+      type: String,
+      default: '/'
+    },
+    current: {
+      type: Number,
+      default: 1
+    },
+    prevText: {
+      type: String,
+      default: '上一页'
+    },
+    nextText: {
+      type: String,
+      default: '下一页'
+    },
+    total: {
+      type: Number
+    },
+    pageRange: {
+      type: Number,
+      default: 3
+    }
+  },
   data () {
     return {
-      
+      l: Math.ceil((this.pageRange - 1)/2),
+      r: Math.floor((this.pageRange - 1)/2),
+    }
+  },
+  computed: {
+    numArr(){
+      const {current, total, l, r, pageRange, range} = this
+      let start = current - l
+      let end = current + r
+      if (start < 1) {
+        start = 1
+        end = start + pageRange - 1
+      }
+      if (end > total) {
+        end = total
+        start = total - pageRange + 1
+      }
+      return this.range(start, end)
     }
   },
   methods: {
-    paginatorHelper(options = {}) {
-      const current = options.current || this.page.current || 0;
-      const total = options.total || this.page.total || 1;
-      const endSize = options.hasOwnProperty('end_size') ? +options.end_size : 1;
-      const midSize = options.hasOwnProperty('mid_size') ? +options.mid_size : 2;
-      const space = options.hasOwnProperty('space') ? options.space : '&hellip;';
-      const base = options.base || this.page.base || '';
-      const format = options.format || `${this.config.pagination_dir}/%d/`;
-      const prevText = options.prev_text || 'Prev';
-      const nextText = options.next_text || 'Next';
-      const prevNext = options.hasOwnProperty('prev_next') ? options.prev_next : true;
-      const transform = options.transform;
-      const self = this;
-      let result = '';
-      let i;
-
-      if (!current) return '';
-
-      const currentPage = `<span class="page-number current">${transform ? transform(current) : current}</span>`;
-
-      function link(i) {
-        return self.url_for(i === 1 ? base : base + format.replace('%d', i));
-      }
-
-      function pageLink(i) {
-        return `<a class="page-number" href="${link(i)}">${transform ? transform(i) : i}</a>`;
-      }
-
-      // Display the link to the previous page
-      if (prevNext && current > 1) {
-        result += `<a class="extend prev" rel="prev" href="${link(current - 1)}">${prevText}</a>`;
-      }
-
-      if (options.show_all) {
-        // Display pages on the left side of the current page
-        for (i = 1; i < current; i++) {
-          result += pageLink(i);
-        }
-
-        // Display the current page
-        result += currentPage;
-
-        // Display pages on the right side of the current page
-        for (i = current + 1; i <= total; i++) {
-          result += pageLink(i);
-        }
-      } else {
-        // It's too complicated. May need refactor.
-        const leftEnd = current <= endSize ? current - 1 : endSize;
-        const rightEnd = total - current <= endSize ? current + 1 : total - endSize + 1;
-        const leftMid = current - midSize <= endSize ? leftEnd + 1 : current - midSize;
-        const rightMid = current + midSize + endSize > total ? rightEnd - 1 : current + midSize;
-        const spaceHtml = `<span class="space">${space}</span>`;
-
-        // Display pages on the left edge
-        for (i = 1; i <= leftEnd; i++) {
-          result += pageLink(i);
-        }
-
-        // Display spaces between edges and middle pages
-        if (space && current - endSize - midSize > 1) {
-          result += spaceHtml;
-        }
-
-        // Display left middle pages
-        if (leftMid > leftEnd) {
-          for (i = leftMid; i < current; i++) {
-            result += pageLink(i);
-          }
-        }
-
-        // Display the current page
-        result += currentPage;
-
-        // Display right middle pages
-        if (rightMid < rightEnd) {
-          for (i = current + 1; i <= rightMid; i++) {
-            result += pageLink(i);
-          }
-        }
-
-        // Display spaces between edges and middle pages
-        if (space && total - endSize - midSize > current) {
-          result += spaceHtml;
-        }
-
-        // Dispaly pages on the right edge
-        for (i = rightEnd; i <= total; i++) {
-          result += pageLink(i);
-        }
-      }
-
-      // Display the link to the next page
-      if (prevNext && current < total) {
-        result += `<a class="extend next" rel="next" href="${link(current + 1)}">${nextText}</a>`;
-      }
-
-      return result;
+    range(min, max) {
+      return Array.apply(null,{length: max - min + 1}).map((v,i) => min + i)
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
+.pagination {
+  display:flex;
+  justify-content: center;
+  .numList {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+  }
+  .item {
+    display: inline-block;
+    .link, .split {
+      display: block;
+      background: transparent;
+      color: #000;
+      line-height: 2;
+      font-size: 16px;
+      color: #000;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .link{
+      padding: 0 1rem;
+      margin: 0 2px;
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      &:hover, &:active {
+        color: #999;
+        background: #dadada;
+      }
+      &.active {
+        color: #fff;
+        background: #999;
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .pagination {
+    .numList {
+      display: none;
+    }
+  }
+}
 </style>

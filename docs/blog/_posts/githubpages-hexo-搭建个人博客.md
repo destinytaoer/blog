@@ -23,7 +23,7 @@ https://hexo.io/zh-cn/docs/index.html
 
 [Node.js](https://nodejs.org/en)
 作用：node.js用来创建hexo博客框架
-[Git客户端](http://git-scm.com/download)
+[Git客户端](https://git-scm.com/download)
 作用：把本地的hexo内容提交到github上去
 
 ## 二、Hexo
@@ -76,7 +76,7 @@ hexo g -d #两个命令的合成，一般在修改或者添加博文后直接使
 hexo g
 hexo s
 ```
-访问http://localhost:4000， 此时，你就能看到了一个漂亮的博客。
+访问https://localhost:4000， 此时，你就能看到了一个漂亮的博客。
 默认主题为：landscape
 
 ## 三、注册Github帐号
@@ -90,16 +90,16 @@ hexo s
 repository相当于一个仓库，用来放置你的代码文件。首先，登陆进入[Github](https://github.com/)，并进入个人页面
 然后New一个repository
     
-![](http://upload-images.jianshu.io/upload_images/7295449-fcf3135671c31605.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-fcf3135671c31605.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ]
 
 点进仓库，点击settings设置
 
-![](http://upload-images.jianshu.io/upload_images/7295449-3865d17ea4339e95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-3865d17ea4339e95.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 下拉到GitHub Pages设置
 
-![](http://upload-images.jianshu.io/upload_images/7295449-e6dc1a9a35e0ffa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-e6dc1a9a35e0ffa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 source选中 master bransh ，然后save，就会出现一个网址。
 
@@ -149,7 +149,7 @@ hexo new "my new post"
 ### 2. 编辑博文
 
 >博文使用的是markdown语言，如果有不会使用的，请参考我的博文：
-[mardown学习总结](http://destinytaoer.cn/2017/07/markdown%E8%AF%AD%E6%B3%95/)
+[mardown学习总结](https://destinytaoer.cn/2017/07/markdown%E8%AF%AD%E6%B3%95/)
 
 在博客目录下\source\_post中打开my-new-post.md，进行编辑
 
@@ -227,6 +227,6 @@ type: tags
 ## 参考
 
 >胖逆的嘟嘟的博文：
-[hexo 的八篇干货](http://www.cnblogs.com/tengj/category/809716.html)
+[hexo 的八篇干货](https://www.cnblogs.com/tengj/category/809716.html)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

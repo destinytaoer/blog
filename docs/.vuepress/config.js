@@ -9,12 +9,11 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/logo.jpg',
+    pageSize: 5,
     // 顶部导航
     nav: [
       { text: '博客', link: '/blog/' },
-      { text: '归档', link: '/archives/'},
-      { text: '分类', link: '/categories/' },
-      { text: '标签', link: '/tags/' },
+      { text: '数据可视化', link: '/visualization/'},
       { text: '语雀', link: 'https://www.yuque.com/destinytaoer/'},
       { text: '关于我', link: '/about/' }
     ],

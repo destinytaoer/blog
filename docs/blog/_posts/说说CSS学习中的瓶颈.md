@@ -45,7 +45,7 @@ copyright: false
 
 小弟不才，凑合画了个瓶颈示意图，如下：
 
-![](http://upload-images.jianshu.io/upload_images/7295449-d35dc28ab525743f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-d35dc28ab525743f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 图中，A → B → C → … 表示进阶，即相关技能的提升；**①②③④则表示各个阶段要进入的瓶颈**！这个适用于各行业，各学派。
 
@@ -85,7 +85,7 @@ CSS的学习入门很容易。
 
 也可以说CSS学习的第①个瓶颈很大（见上图①处瓶口），以至于不能称为“瓶颈”。可能只要1年甚至半年的时候，我们就能根据设计图迅速成型页面，能熟练使用些CSS hack，这个阶段我们的成长很快，只要有页面写或只要四处转转，我们每天都能汲取新知识。如果用二维曲线表示就是：
 
-![](http://upload-images.jianshu.io/upload_images/7295449-9d78f6a6574702fa.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-9d78f6a6574702fa.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 满瓶不动半瓶摇，这个阶段实际上是CSS非常初级的阶段，也是广大页面仔们最为浮躁，最自以为是，最觉得CSS不过如此的阶段！所学越多越知所知甚少，那些成天叫嚣的人往往半吊子居多。
 
@@ -106,7 +106,7 @@ CSS的学习入门很容易。
 
 看看这张图：
 
-![](http://upload-images.jianshu.io/upload_images/7295449-8568025d96c11b26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-8568025d96c11b26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 我们很自然想到，要从A到B阶段，只要向下，向深度发展就可以了。所以，如果您觉得现在CSS这块学到的东西不多了，试试**向垂直方向学习**。
 
@@ -126,15 +126,15 @@ CSS3的出现似乎让一些CSSer们的学习有了新的方向：CSS2.1中的�
 
 我们往往不是这样子看的：
 
-![](http://upload-images.jianshu.io/upload_images/7295449-49bf69602f15ba4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-49bf69602f15ba4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 而是从上往下，只看到瓶口
 
-![](http://upload-images.jianshu.io/upload_images/7295449-8769b391d971d940.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-8769b391d971d940.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 看不出水有多深，看不到瓶颈在哪里！想起了一部美剧——《迷失》，想起了一句古话——“只缘身在此山中”。
 
-![](http://upload-images.jianshu.io/upload_images/7295449-33dab374bc715430.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-33dab374bc715430.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 3 瓶颈在哪？
 
@@ -157,7 +157,7 @@ CSS3的出现似乎让一些CSSer们的学习有了新的方向：CSS2.1中的�
 body,h1,... ,dl,dt,dd,...,th,td { margin:0; padding: 0; }
 ```
 你看，**淘宝网首页就是这么干的**(global-min.css)！从实际应用来看，我无需关心！
-![](http://upload-images.jianshu.io/upload_images/7295449-9e343304967950c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-9e343304967950c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这样的想法，类似于：我根本不需要知道我的前任、现任、后任女友是否是处女，因为我都直接让她们做处女膜修复！从实际应用来看，我无需关心
 
@@ -248,7 +248,7 @@ E. 啊，什么，我刚扫视了，没注意到~~
 
 对应下表：
 
-![](http://upload-images.jianshu.io/upload_images/7295449-c4f241e5c119711d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-c4f241e5c119711d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 实际对比我会发现差异不大，但是我不会认为其没有差异，因为高中大学做实验很基本的一条就是多个条件的实践，于是，我会使用vertical-align:-200px;
 
@@ -257,7 +257,7 @@ E. 啊，什么，我刚扫视了，没注意到~~
 
 vertical-align会增加容器的高度，而margin-bottom负值则是减小！
 
-![](http://upload-images.jianshu.io/upload_images/7295449-a1a90d51f074c758.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-a1a90d51f074c758.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 然后，我可能会整理，然后……（接下面）
 
@@ -282,11 +282,11 @@ vertical-align会增加容器的高度，而margin-bottom负值则是减小！
 在突破瓶颈的时候，我们也可以，而且建议这么尝试。限制于惯性思维中，是很难突破瓶颈的。**我们可以将自己过往的一切全盘否定，然后重新再来**，你可能就会看到另外一个自己。
 举个例子
 
-![](http://upload-images.jianshu.io/upload_images/7295449-a8d6e996c29bf3be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-a8d6e996c29bf3be.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 如果你一直都是固定布局的，自己在心里默念三遍：固定布局就是个屎，我要投奔流体布局！如果你一直都是流体布局的，自己心里也默念三遍：流体布局就是个屎，我要投奔固定布局！如果你固定/流体布局兼修，自己心里也默念三遍：什么固定/流体布局都是屎，我要投奔时髦的响应布局！
 
-![](http://upload-images.jianshu.io/upload_images/7295449-bb54218fa278ddfd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-bb54218fa278ddfd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **放开自己，拥抱未来，拥抱变化。舍弃过往，接受新颖的架构，思想，理念。**你就会发现，很短的时候，自己有了质地提升。
 
@@ -304,7 +304,7 @@ vertical-align会增加容器的高度，而margin-bottom负值则是减小！
 **吃得苦中苦，方为人上人**
 
 ## 引自
-> 本文转载自[说说CSS学习中的瓶颈](http://www.zhangxinxu.com/wordpress/2012/07/bottleneck-css-study/)
+> 本文转载自[说说CSS学习中的瓶颈](https://www.zhangxinxu.com/wordpress/2012/07/bottleneck-css-study/)
 >
 > 关于作者
 > **张鑫旭**，09年华中科技大学毕业，现上海，就职于阅文集团，专注web前端偏前领域，钓鱼爱好者。

@@ -3,7 +3,7 @@
     <ul class="post-list">
       <li
         class="post-list-item fade"
-        v-for="post in $posts"
+        v-for="post in posts"
       >
         <article
           :id="'post-' + post.title"
@@ -24,7 +24,7 @@
                 :datetime="post.frontmatter.update"
                 itemprop="dateUpdate"
               >
-                {{formatDate(post.frontmatter.update||post.frontmatter.date)}}</time>
+                {{post.updatedAt}}</time>
             </li>
             <li>
               {{post.frontmatter.category}}
@@ -53,23 +53,38 @@
         </article>
       </li>
     </ul>
+    <Pagination :current="index" :basePath="'/blog/'" :total="10"></Pagination>
   </div>
 </template>
 
 <script>
 import TagList from "./common/TagList"
 import Pagination from './common/Pagination'
+
+const routes = []
 export default {
   data() {
-    return {};
+    return {
+    };
   },
   computed: {
-    
+    pageSize() {
+      return this.$site.themeConfig.pageSize
+    },
+    index() {
+      return +this.$route.query.index || 1
+    },
+    posts() {
+      let start = (this.index - 1) * this.pageSize
+      let end =  this.index* this.pageSize
+      let posts = this.$posts.slice(start, end)
+      return posts
+    },
+    pageNum() {
+      return Math.ceil(this.$posts.length / this.pageSize)
+    }
   },
   methods: {
-    formatDate(date) {
-      return date.slice(0, 10);
-    }
   },
   components: {
     TagList,

@@ -32,7 +32,7 @@ Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作
 通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。
 
 >下面只是介绍gulp的基本用法和常用插件。
-详情查看：[gulp中文网](http://www.gulpjs.com.cn/)
+详情查看：[gulp中文网](https://www.gulpjs.com.cn/)
 
 <!-- more -->
 ## 安装与使用

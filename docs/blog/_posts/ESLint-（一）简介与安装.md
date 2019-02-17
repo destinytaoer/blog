@@ -12,7 +12,7 @@ comments: true
 copyright: true
 ---
 
-![](http://upload-images.jianshu.io/upload_images/7295449-fc178e0811917b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-fc178e0811917b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 一、关于
 ESLint 是一个由 Nicholas C. Zakas 于 2013 年 6 月创建的开源 JavaScript linting 实用程序。codelinting 是一种静态分析，常用于查找不符合某些样式指南的有问题的模式或代码。
@@ -44,7 +44,7 @@ npm install -g eslint
 ./node_modules/.bin/eslint yourfile.js
 ```
 ## 参考
->[ESLint（二）配置文件](http://destinytaoer.cn/b0fbee66)
+>[ESLint（二）配置文件](https://destinytaoer.cn/b0fbee66)
 [起步](https://eslint.org/docs/user-guide/getting-started)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

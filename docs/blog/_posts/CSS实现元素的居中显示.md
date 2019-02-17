@@ -34,7 +34,7 @@ div {
 - 这里的`heightValue`指的是`height`属性值，即行高值 = 高度值，才能实现垂直居中。
 - 另外一种常见的就是不设置高度，直接用行高来撑起高度，这样就不存在行高与高度一致的问题。
 
->具体原因请参考文章：[对文字和行高的理解](http://www.jianshu.com/p/dc324a36ba84)
+>具体原因请参考文章：[对文字和行高的理解](https://www.jianshu.com/p/dc324a36ba84)
 
 ## 二、多行文本
 
@@ -138,6 +138,6 @@ img{
 }
 ```
 简洁、高效，在低版本IE存在兼容问题，但是现在几乎不用考虑了。
->详细语法请查看我的博文：[关于Flex布局](http://www.jianshu.com/p/90dbbbecdf3b)
+>详细语法请查看我的博文：[关于Flex布局](https://www.jianshu.com/p/90dbbbecdf3b)
 
 <common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

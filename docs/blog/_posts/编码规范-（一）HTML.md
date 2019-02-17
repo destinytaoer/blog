@@ -14,7 +14,7 @@ copyright: false
 ## 前言
 统一的编码规范，有助于编写高质量、稳定、可维护的代码。
 
->本文引自：[编码规范 by @mdo](http://codeguide.bootcss.com/#html-syntax)
+>本文引自：[编码规范 by @mdo](https://codeguide.bootcss.com/#html-syntax)
 >
 >**黄金定律**
 不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。

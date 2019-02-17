@@ -16,7 +16,7 @@ copyright: true
 
 配置完yilia后，发现缺少一些东西，百度之下，找到了特别喜欢的主题——next。跟大家分享配置经验。
 
-- 首先，本文是根据我自己的博客配置而写的，并不全面，其他美化配置在文末提供了相应的参考链接。欢迎浏览我的博客：[destiny'Note](http://destinytaoer.cn)
+- 首先，本文是根据我自己的博客配置而写的，并不全面，其他美化配置在文末提供了相应的参考链接。欢迎浏览我的博客：[destiny'Note](https://destinytaoer.cn)
 - 其次，本文中有部分自己的改进方案，并非全部摘自他文，所以转载请注明版权
 - 最后，有不懂的或者有其他方案，欢迎联系本人
 
@@ -523,7 +523,7 @@ copyright: false
 
 - **获取不蒜子代码**
 
-在[不蒜子](http://busuanzi.ibruce.info/)上获取代码：
+在[不蒜子](https://busuanzi.ibruce.info/)上获取代码：
 
 ```html
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -594,7 +594,7 @@ leancloud_visitors:
 
 ### 8. 添加友言评论
 
-在[友言评论](http://www.uyan.cc/)中注册，并进入管理来获取你的id。
+在[友言评论](https://www.uyan.cc/)中注册，并进入管理来获取你的id。
 修改主题配置文件的友言id：
 ```yaml
 # youyan 评论
@@ -611,8 +611,8 @@ jiathis:
 ```
 
 ## 参考
->[next官网：第三方服务集成](http://theme-next.iissnan.com/third-party-services.html)
-[hexo的next主题个性化教程:打造炫酷网站](http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html)
+>[next官网：第三方服务集成](https://theme-next.iissnan.com/third-party-services.html)
+[hexo的next主题个性化教程:打造炫酷网站](https://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html)
 >[Hexo-NexT搭建个人博客](https://neveryu.github.io/categories/Hexo/)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

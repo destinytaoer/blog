@@ -25,8 +25,8 @@ Markdown 是一种用来写作的轻量级标记语言，创始人为约翰·格
 <!-- more -->
 
 ### 编辑器
-1. [sublime text](http://www.sublimetext.com/)(本人从事前端开发最喜欢用的一个编辑器，轻量级，但是非常强大)、Mac的mou、Markdownpad等
-2. 很多网站也支持了 Markdown 的文字录入，如[简书](http://www.jianshu.com "http://www.jianshu.com")
+1. [sublime text](https://www.sublimetext.com/)(本人从事前端开发最喜欢用的一个编辑器，轻量级，但是非常强大)、Mac的mou、Markdownpad等
+2. 很多网站也支持了 Markdown 的文字录入，如[简书](https://www.jianshu.com "https://www.jianshu.com")
 3. 在线编辑器，推荐[StackEdit](https://stackedit.io/editor "https://stackedit.io/editor")
 
 ## 二、 markdown语法
@@ -103,11 +103,11 @@ Markdown 是一种用来写作的轻量级标记语言，创始人为约翰·格
 在方括号写下链接文字，圆括号写下网址即可。也可以在右边加上空格，再用引号加上title属性。（这个title属性可能有些人不知道，就是鼠标移动到链接上会显示的文本）
 
 ```
-[好中文的样子](http://www.jianshu.com/p/d409bb2b5d6c "http://www.jianshu.com/p/d409bb2b5d6c")
+[好中文的样子](https://www.jianshu.com/p/d409bb2b5d6c "https://www.jianshu.com/p/d409bb2b5d6c")
 ```
 效果：
 
-[好中文的样子](http://www.jianshu.com/p/d409bb2b5d6c "http://www.jianshu.com/p/d409bb2b5d6c")
+[好中文的样子](https://www.jianshu.com/p/d409bb2b5d6c "https://www.jianshu.com/p/d409bb2b5d6c")
 
 还有一种在文章最后参考式的链接，在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：
 ```
@@ -119,7 +119,7 @@ This is [an example] [] reference-style link.
 ```
 接着，在文件的任意处，你可以把这个标记的链接内容定义出来：
 ```
-[id]: http://example.com/  "Optional Title Here"
+[id]: https://example.com/  "Optional Title Here"
 ```
 当第二个方括号里面为空格时，定义时应当取第一个方括号
 同样，可以在定义时，写上title属性

@@ -13,7 +13,7 @@ copyright: false
 
 ## 前言
 
-![](http://upload-images.jianshu.io/upload_images/7295449-38044c92f204f8f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-38044c92f204f8f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 讲讲布局，传统的布局，是基于盒子模型，依赖 `display` + `position` + `float`属性。它对于特殊的布局非常不方便，如：垂直居中。
 
@@ -46,7 +46,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 
 ## 二、基本概念
 
-![](http://upload-images.jianshu.io/upload_images/7295449-b39f755f51fc1c12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-b39f755f51fc1c12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - **设置flex的元素，称为Flex容器（flex container），它的所有子元素自动成为容器成员，称为Flex项目（flex item）**
 
@@ -71,7 +71,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
   flex-direction: row | row-reverse | column | column-reverse;
 }
 ```
-![](http://upload-images.jianshu.io/upload_images/7295449-c0e2ad4cc2a1f840.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-c0e2ad4cc2a1f840.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - `row`（默认值）：主轴为水平方向，起点在左端。
 - `row-reverse`：主轴为水平方向，起点在右端。
@@ -86,13 +86,13 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 }
 ```
 - `nowrap`（默认）：不换行
-![](http://upload-images.jianshu.io/upload_images/7295449-b4a678bc75ad110d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-b4a678bc75ad110d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - `wrap`：换行，第一行在上方，正常顺序
-![](http://upload-images.jianshu.io/upload_images/7295449-42d39422afd501b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-42d39422afd501b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 - `wrap-reverse`：换行：第一行在下方，相反顺序
-![](http://upload-images.jianshu.io/upload_images/7295449-054925da3f14dcd1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-054925da3f14dcd1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >**注意**：`wrap-reverse`会使交叉轴的方向改变
 
@@ -110,7 +110,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
   justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 ```
-![](http://upload-images.jianshu.io/upload_images/7295449-3161e773beaa8a3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-3161e773beaa8a3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 它可能取5个值，**具体对齐方式与轴的方向有关**。下面假设主轴为从左到右。
 - `flex-start`（默认值）：左对齐，与主轴开始位置对齐
@@ -127,7 +127,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 }
 ```
 
-![](http://upload-images.jianshu.io/upload_images/7295449-8e4cb62f3df11610.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-8e4cb62f3df11610.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 它可能取5个值。**具体的对齐方式与交叉轴的方向有关**，下面假设交叉轴从上到下。
 - `flex-start`：交叉轴的起点对齐。
@@ -143,7 +143,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 ```
-![](http://upload-images.jianshu.io/upload_images/7295449-aaba23b87456a372.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-aaba23b87456a372.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 该属性可能取6个值。
 - `flex-start`：与交叉轴的起点对齐。
@@ -169,7 +169,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 }
 ```
 
-![](http://upload-images.jianshu.io/upload_images/7295449-3e4caf2cc2056a96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-3e4caf2cc2056a96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 2. flex-grow
 `flex-grow`属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
@@ -179,7 +179,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 }
 ```
 
-![](http://upload-images.jianshu.io/upload_images/7295449-2a4ee76e08936ddf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-2a4ee76e08936ddf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 如果所有项目的`flex-grow`属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的`flex-grow`属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
 
@@ -191,7 +191,7 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 }
 ```
 
-![](http://upload-images.jianshu.io/upload_images/7295449-9b2f8f4fdff2f8bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-9b2f8f4fdff2f8bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 如果所有项目的`flex-shrink`属性都为1，当空间不足时，都将等比例缩小。如果一个项目的`flex-shrink`属性为0，其他项目都为1，则空间不足时，前者不缩小。**负值对该属性无效。**
 
@@ -221,11 +221,11 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
-![](http://upload-images.jianshu.io/upload_images/7295449-bced512271d25819.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-bced512271d25819.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 该属性可能取6个值，除了`auto`，其他都与`align-items`属性完全一致。
 
 ## 引自
-> 本文引自阮一峰的网络日志：[Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+> 本文引自阮一峰的网络日志：[Flex 布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

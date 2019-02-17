@@ -12,7 +12,7 @@ comments: true
 copyright: true
 ---
 
-![](http://upload-images.jianshu.io/upload_images/7295449-fc178e0811917b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-fc178e0811917b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 一、配置方式
 - 注释形式：使用 JavaScript 注释将配置信息直接嵌入到文件中
@@ -182,7 +182,7 @@ module.exports = {
 ```
 
 ## 参考
->[ESLint （一）简介与安装](http://destinytaoer.cn/posts/4e5d3138/)
+>[ESLint （一）简介与安装](https://destinytaoer.cn/posts/4e5d3138/)
 [配置ESLint](https://eslint.org/docs/user-guide/configuring)
 
 <blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>

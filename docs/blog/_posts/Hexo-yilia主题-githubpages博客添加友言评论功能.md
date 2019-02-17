@@ -21,19 +21,19 @@ Hexo博客的Yilia主题中评论系统只提供了畅言、网易云跟帖、�
 在多次查找与尝试下，终于成功，下面与大家分享我的方法。
 
 >注意：本文是在前面都配置好的情况下进行的，如果最初并没有配置好，请查看：
-[hexo+gitHubPages 快速搭建个人博客](http://destinytaoer.cn/2017/09/githubpages-hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
+[hexo+gitHubPages 快速搭建个人博客](https://destinytaoer.cn/2017/09/githubpages-hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
 
 <!-- more -->
 
 ## 一、注册友言id
 
 ### 1. 注册
-在[友言官网](http://www.uyan.cc/)上直接使用qq登录，注册成功直接出来代码
-![](http://upload-images.jianshu.io/upload_images/7295449-37980e74302972eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+在[友言官网](https://www.uyan.cc/)上直接使用qq登录，注册成功直接出来代码
+![](https://upload-images.jianshu.io/upload_images/7295449-37980e74302972eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 2. 获取你的id
 进入后台管理，你会看到：
-![](http://upload-images.jianshu.io/upload_images/7295449-e5dd6750141f186e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-e5dd6750141f186e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 获取到你的id
 
 ## 二、博客文件配置
@@ -69,14 +69,14 @@ uyan: 后面必须添加一个**空格**，这是Hexo博客的配置要求
 hexo clean
 hexo g
 hexo s
-访问： http://localhost:4000
+访问： https://localhost:4000
 **本地实现评论系统成功！**
 
 ## 三、解决Github发生错误
 上传到github上后，打开你的github页面，发现评论并没有出现。按F12，发现报错：
 ```
 The page at 'https...' was loaded over HTTPS,
- but requested an insecure stylesheet 'http://..../css/1_6/background.css'. 
+ but requested an insecure stylesheet 'https://..../css/1_6/background.css'. 
 This request has been blocked; the content must be served over HTTPS.
 ```
 原因：**https下的http加载会被阻塞**，也就是无法加载友言的那个js文件
@@ -100,10 +100,10 @@ This request has been blocked; the content must be served over HTTPS.
 
 ### 3. 域名解析
 
-![](http://upload-images.jianshu.io/upload_images/7295449-bad38ddb5a3b23c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-bad38ddb5a3b23c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 按下图添加记录：
-![](http://upload-images.jianshu.io/upload_images/7295449-9caf93d06edab157.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/7295449-9caf93d06edab157.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 现在基本已经成功，你可以访问你的域名来查看你的博客
@@ -128,8 +128,8 @@ root: /
 
 ## 参考
 
->[为next添加友言评论支持](http://www.jianshu.com/p/4729e92fddbe)
-[hexo yilia 添加友言评论支持](http://jingyan.baidu.com/article/4b52d702c8eb8dfc5d774b71.html)
+>[为next添加友言评论支持](https://www.jianshu.com/p/4729e92fddbe)
+[hexo yilia 添加友言评论支持](https://jingyan.baidu.com/article/4b52d702c8eb8dfc5d774b71.html)
 [使用GitHub页面的自定义域](https://help.github.com/articles/using-a-custom-domain-with-github-pages/)
 [github怎么绑定自己的域名？](https://www.zhihu.com/question/31377141)
 

@@ -12,9 +12,9 @@ comments: true
 ---
 
 >引自：阮一峰的博客
->[Javascript面向对象编程（一）：封装](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)
->[Javascript面向对象编程（二）：构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
->[Javascript面向对象编程（三）：非构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)
+>[Javascript面向对象编程（一）：封装](https://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html)
+>[Javascript面向对象编程（二）：构造函数的继承](https://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)
+>[Javascript面向对象编程（三）：非构造函数的继承](https://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)
 
 本篇博文是摘自上面的博客，进行了一定的精简，直接呈现最理想的实现方法。
 

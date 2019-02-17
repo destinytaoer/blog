@@ -25,7 +25,7 @@ comments: true
 ## 博客介绍
 
 - 博客名：destiny'Note
-- 博主：[destiny](http://destinytaoer.cn/about/)
+- 博主：[destiny](https://destinytaoer.cn/about/)
 - 博客描述：分享前端技术学习过程中的笔记、一些优质资源以及个人随笔
 - 博客目录：
 	- 博客建站

@@ -15,7 +15,7 @@ comments: true
 
 HTML是超文本标记（Hyper Text Markup Language）的缩写，在网页设计中又把它称为网页的结构层。它的学习很简单，只要多利用业余时间去记忆、练习，一到两天时间就能掌握，并写出一个简单页面。
 
->这里推荐一个快速入门的网址：http://www.w3school.com.cn/ 
+>这里推荐一个快速入门的网址：https://www.w3school.com.cn/ 
 
 <!-- more -->
 

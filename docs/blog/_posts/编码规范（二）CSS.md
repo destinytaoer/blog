@@ -15,7 +15,7 @@ copyright: false
 
 CSS 代码的编写，应该尽量简洁、高性能、高可维护性，达到三者的一个最佳平衡。不能为了简洁牺牲可维护性。
 
->本文引自：[编码规范 by @mdo](http://codeguide.bootcss.com/#html-syntax)
+>本文引自：[编码规范 by @mdo](https://codeguide.bootcss.com/#html-syntax)
 >
 >**黄金定律**
 不管有多少人共同参与同一项目，一定要确保每一行代码都像是同一个人编写的。

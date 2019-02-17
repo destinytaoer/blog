@@ -18,7 +18,7 @@ copyright: true
 
 本文主要是为自己做笔记以及备份的，介绍自己使用的sublime text插件。希望对大家也有所帮助。
 
-> 官网地址：[Sublime Text](http://www.sublimetext.com/)
+> 官网地址：[Sublime Text](https://www.sublimetext.com/)
 
 <!-- more -->
 
