@@ -21,15 +21,15 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9709e3e67503278ee585dfbbf83d4f84"
+    "revision": "57d26ea9d6d31ca12dd5d1c236732d2b"
   },
   {
     "url": "about/index.html",
-    "revision": "7563dd8b58aaffbade630ba4bc53ae38"
+    "revision": "02c43c138008cf8936219f67bebaa998"
   },
   {
     "url": "archives/index.html",
-    "revision": "1347c09354f98b19b80c850c50031b41"
+    "revision": "7f1b7ec8eb3cf107ec1376570befd754"
   },
   {
     "url": "assets/css/0.styles.c809d126.css",
@@ -60,67 +60,67 @@ self.__precacheManifest = [
     "revision": "f001097db0e85674c8d0ab69ca38fbb3"
   },
   {
-    "url": "assets/js/15.e4ba00ca.js",
-    "revision": "f200439c7f000094976d81ac20bea6a7"
+    "url": "assets/js/15.94fae7d7.js",
+    "revision": "bc986f3faa2fb60ae5ad3e8dc0abc039"
   },
   {
     "url": "assets/js/16.7e1184ff.js",
     "revision": "c1c67a832e7c6cc983b80a758393afea"
   },
   {
-    "url": "assets/js/17.b3992820.js",
-    "revision": "d20c66782519334ecd9ccf0f5d63f542"
+    "url": "assets/js/17.e0ab413b.js",
+    "revision": "f378b6c97004a88dd2d667680af58568"
   },
   {
-    "url": "assets/js/18.238a05ee.js",
-    "revision": "f6ccc85bd08c3916580d56f57da82fb2"
+    "url": "assets/js/18.00545af9.js",
+    "revision": "333ed85d57f050c9b5468334cfedd96c"
   },
   {
-    "url": "assets/js/19.f883976b.js",
-    "revision": "ff2a97514d1d68301ca0aa4809045e5d"
+    "url": "assets/js/19.3aebff99.js",
+    "revision": "7360090b5a6453b0e99f6f2a21a127b3"
   },
   {
     "url": "assets/js/2.8f431860.js",
     "revision": "7bef6e69a6e5dae1da587c996cefa65d"
   },
   {
-    "url": "assets/js/20.51dc2dee.js",
-    "revision": "a5a4d2bdb6b0a886ac205265cd21cf92"
+    "url": "assets/js/20.be3eaeb7.js",
+    "revision": "e1e2cccf7a5db8eb5d939105cec2a809"
   },
   {
-    "url": "assets/js/21.796983e0.js",
-    "revision": "e320305875698860c0be71777667769b"
+    "url": "assets/js/21.116b9116.js",
+    "revision": "955017517dddb1a6e489de090ac6ff70"
   },
   {
-    "url": "assets/js/22.d7517b7c.js",
-    "revision": "b293d4fc4ca0ab15248c69bbe269b02e"
+    "url": "assets/js/22.06e64f9d.js",
+    "revision": "4bf69595a0060b8152f81a2b636a42a6"
   },
   {
-    "url": "assets/js/23.e06a382b.js",
-    "revision": "5c594e404d3665ba31f49d462be6b117"
+    "url": "assets/js/23.0c5c8d73.js",
+    "revision": "9494cf204685c1e789d3c9eb5735394b"
   },
   {
-    "url": "assets/js/24.9333f032.js",
-    "revision": "ae46a8912e8872a5fc0ea0a42e7b6961"
+    "url": "assets/js/24.773d81e5.js",
+    "revision": "e824331bd94700428cb7e9a4508a6090"
   },
   {
-    "url": "assets/js/25.1376bbf3.js",
-    "revision": "c8ebba11d818a6e4fafd97a489f062a8"
+    "url": "assets/js/25.8f2ad6f5.js",
+    "revision": "d845551c0ffd45c57009e7a7c48cc317"
   },
   {
-    "url": "assets/js/26.150548e6.js",
-    "revision": "b0bbf653a73535923107f57545e26771"
+    "url": "assets/js/26.b2d8f4cc.js",
+    "revision": "598dfb51b564ca71db714922859b62c6"
   },
   {
-    "url": "assets/js/27.ab9291a9.js",
-    "revision": "886d07b53975a444071fbf1fb62feeb6"
+    "url": "assets/js/27.9bcc3ee8.js",
+    "revision": "70ea827e5608090d0b18bb9c0110bc98"
   },
   {
-    "url": "assets/js/28.8d911f13.js",
-    "revision": "7821db2c2167f8ab38a87a5bfa149551"
+    "url": "assets/js/28.0578a1d5.js",
+    "revision": "80fec90112d2038df51832e351e69339"
   },
   {
-    "url": "assets/js/29.36d74b48.js",
+    "url": "assets/js/29.ee77ff32.js",
     "revision": "0a72f266f85e08ee3a67d6dfd40e2a47"
   },
   {
@@ -128,43 +128,43 @@ self.__precacheManifest = [
     "revision": "8d8c31f8bdc6657fed5379f021222c35"
   },
   {
-    "url": "assets/js/30.58282bee.js",
+    "url": "assets/js/30.49a43090.js",
     "revision": "0a134ff2f3ef7b43464df496506fc4a5"
   },
   {
-    "url": "assets/js/31.640a05cc.js",
+    "url": "assets/js/31.6ebe7b49.js",
     "revision": "752d04f50debfec3ce6707793bf2fc2c"
   },
   {
-    "url": "assets/js/32.2ef4d532.js",
+    "url": "assets/js/32.c3b36a76.js",
     "revision": "9c49efea6941c5b581a07be2c7e6a6ac"
   },
   {
-    "url": "assets/js/33.901b42c3.js",
+    "url": "assets/js/33.51288f47.js",
     "revision": "467e9ff404f35a44849ec3a84163c496"
   },
   {
-    "url": "assets/js/34.a6b6468a.js",
+    "url": "assets/js/34.b5e242cc.js",
     "revision": "a94b29bbe73ffb5c35efe5a29bd1a0ae"
   },
   {
-    "url": "assets/js/35.85513031.js",
+    "url": "assets/js/35.121369a4.js",
     "revision": "2b93dabcf325270041161431a6dca9ab"
   },
   {
-    "url": "assets/js/36.8ceb766e.js",
+    "url": "assets/js/36.a056d0a9.js",
     "revision": "f7d35be7aa889d99ab23b49a0f90b6c5"
   },
   {
-    "url": "assets/js/37.c9ed53d0.js",
+    "url": "assets/js/37.0b71e232.js",
     "revision": "282324b01023318da8d2bd7328eb171f"
   },
   {
-    "url": "assets/js/38.9f1ce7af.js",
+    "url": "assets/js/38.032d256c.js",
     "revision": "7efc601faab5c83a5cc7b2a7510d05ec"
   },
   {
-    "url": "assets/js/39.d74e87db.js",
+    "url": "assets/js/39.5f6585c6.js",
     "revision": "ed3c65d317825f4d94799cf3b05aa05e"
   },
   {
@@ -172,43 +172,43 @@ self.__precacheManifest = [
     "revision": "af81438a1ec26e0bc8b68e45b8ec4182"
   },
   {
-    "url": "assets/js/40.adb5b61b.js",
+    "url": "assets/js/40.14a6405b.js",
     "revision": "4a328a1006aecf9852d55f19f907bc35"
   },
   {
-    "url": "assets/js/41.ec893b23.js",
+    "url": "assets/js/41.1cf62ee0.js",
     "revision": "fd0b14456f12b2b9868066005950fb5f"
   },
   {
-    "url": "assets/js/42.88343829.js",
+    "url": "assets/js/42.e7639cee.js",
     "revision": "9a2ba9aca75c2a059ccd3daed96729d2"
   },
   {
-    "url": "assets/js/43.4000a133.js",
+    "url": "assets/js/43.536ec85d.js",
     "revision": "0e18baefb89e159b297aff269e9eb181"
   },
   {
-    "url": "assets/js/44.c480ef02.js",
+    "url": "assets/js/44.ba66dcc1.js",
     "revision": "046b80fcad451ad68dcc492892576de4"
   },
   {
-    "url": "assets/js/45.04e14015.js",
+    "url": "assets/js/45.c6104187.js",
     "revision": "b69a7411c5f63cba28d1789c0297da70"
   },
   {
-    "url": "assets/js/46.c67c61e2.js",
+    "url": "assets/js/46.c292ed00.js",
     "revision": "2878230e821105f4ddc6daa742928cce"
   },
   {
-    "url": "assets/js/47.06948df3.js",
+    "url": "assets/js/47.efbbfd5c.js",
     "revision": "7cbf4a923318467d3c7c8af277fbb1eb"
   },
   {
-    "url": "assets/js/48.2d1b9277.js",
+    "url": "assets/js/48.660142ef.js",
     "revision": "4a3b844222471570b51b94285317fc82"
   },
   {
-    "url": "assets/js/49.8a859f09.js",
+    "url": "assets/js/49.1ea8cf34.js",
     "revision": "06b985f366f2f095648032c3469a25ef"
   },
   {
@@ -216,11 +216,11 @@ self.__precacheManifest = [
     "revision": "90198c32a212997e084774cd3622d72d"
   },
   {
-    "url": "assets/js/50.a62ddf28.js",
+    "url": "assets/js/50.28e1667d.js",
     "revision": "43353c88412527febdedf1c2cb721534"
   },
   {
-    "url": "assets/js/51.a2c389c6.js",
+    "url": "assets/js/51.86030a2e.js",
     "revision": "a951dad5959e435e83044a74066eb3e4"
   },
   {
@@ -248,156 +248,156 @@ self.__precacheManifest = [
     "revision": "d7789bb3f08778b1d02a1facabf9f1b6"
   },
   {
-    "url": "assets/js/app.04c81d43.js",
-    "revision": "faed36cf5aef5b859cd5d5ef101fc69e"
+    "url": "assets/js/app.ffa51721.js",
+    "revision": "633a1fd961ddf7f6fd7aae1d7c659328"
   },
   {
     "url": "author.jpg",
     "revision": "df2fc7455cc5663043df50d78c9329ef"
   },
   {
-    "url": "blog/_posts/CSS实现元素的居中显示.html",
-    "revision": "cf335585371bd9cf6709a2ae29f2d0b7"
+    "url": "blog/CSS实现元素的居中显示.html",
+    "revision": "bc911c1a60663279c5507f205b1721e5"
   },
   {
-    "url": "blog/_posts/DOM的映射机制.html",
-    "revision": "8a4b17b5fbd649583872578b57a950e4"
+    "url": "blog/DOM的映射机制.html",
+    "revision": "b363547d8581591af00695d82817882f"
   },
   {
-    "url": "blog/_posts/ESLint-（一）简介与安装.html",
-    "revision": "854f6cf25bfec20eb8bbe6093541ce7f"
+    "url": "blog/ESLint-（一）简介与安装.html",
+    "revision": "c87a29a21a1c83e672e2c1c3c3fba556"
   },
   {
-    "url": "blog/_posts/ESLint-（二）配置文件.html",
-    "revision": "96bc97785737793e461551222dd42d57"
+    "url": "blog/ESLint-（二）配置文件.html",
+    "revision": "fe7281dad2866616ce1d241b1409c7d5"
   },
   {
-    "url": "blog/_posts/githubpages-hexo-搭建个人博客.html",
-    "revision": "46185d94775a55c413967a9bf113abd4"
+    "url": "blog/githubpages-hexo-搭建个人博客.html",
+    "revision": "51c961778de0328f0d429971b4e67b62"
   },
   {
-    "url": "blog/_posts/gulp-自动化构建工具.html",
-    "revision": "32426bc3abe26d14825fa381f6172be4"
+    "url": "blog/gulp-自动化构建工具.html",
+    "revision": "76b794733638f0de7a54f7ce1031273b"
   },
   {
-    "url": "blog/_posts/hello-world.html",
-    "revision": "ef1290f569a84085d2cfb90766470a3f"
+    "url": "blog/hello-world.html",
+    "revision": "491f4bbf41664518e7190a7345523ddf"
   },
   {
-    "url": "blog/_posts/hexo-next主题高级配置.html",
-    "revision": "a78a4aa3f8b8a0e3cb6753d5224cf0a6"
+    "url": "blog/hexo-next主题高级配置.html",
+    "revision": "223c1832dd52718afbd2f10971047775"
   },
   {
-    "url": "blog/_posts/Hexo-yilia主题-githubpages博客添加友言评论功能.html",
-    "revision": "22bb29a2d8c6decbc9f337ef0fec37cf"
+    "url": "blog/Hexo-yilia主题-githubpages博客添加友言评论功能.html",
+    "revision": "a6fd23140d23c1e8d9d588ff2a61e92f"
   },
   {
-    "url": "blog/_posts/html语义化.html",
-    "revision": "1e12c8b6e23c48eb130f135f494afdac"
-  },
-  {
-    "url": "blog/_posts/JavaScript-面向对象编程.html",
-    "revision": "e605d27471da59a498224c0e074f6cf5"
-  },
-  {
-    "url": "blog/_posts/JS变量提升.html",
-    "revision": "2de59b521dfc8da73187109cb2cbb60f"
-  },
-  {
-    "url": "blog/_posts/JS变量的创建机制.html",
-    "revision": "425fb396bd7e61b890bb7d041a431eda"
-  },
-  {
-    "url": "blog/_posts/JS堆栈内存.html",
-    "revision": "980e35252201759b3d7cd23f877efd98"
-  },
-  {
-    "url": "blog/_posts/JS类型转换总结.html",
-    "revision": "82370b538758509961a9cc94d024a583"
-  },
-  {
-    "url": "blog/_posts/Markdown添加Latex数学公式.html",
-    "revision": "5e1501894fe75ff33f058fc9fa819efa"
-  },
-  {
-    "url": "blog/_posts/markdown语法.html",
-    "revision": "8f33e0291b05db8ecfed640739117515"
-  },
-  {
-    "url": "blog/_posts/sass的使用.html",
-    "revision": "aad6a13343be4e94dc12d009220f1ef4"
-  },
-  {
-    "url": "blog/_posts/sublimetext-实用插件介绍.html",
-    "revision": "b7ea97b28baab612a83b860f20216fe6"
-  },
-  {
-    "url": "blog/_posts/Transform-引起的-z-index-失效‘.html",
-    "revision": "48d26a975724a85d47310e5888241b15"
-  },
-  {
-    "url": "blog/_posts/像素与viewport概念.html",
-    "revision": "b5749cebc2b48c5c51a77bb99e0c2cfa"
-  },
-  {
-    "url": "blog/_posts/关于Flex布局.html",
-    "revision": "e969c7045bdbaf54598e3debdb3862b2"
-  },
-  {
-    "url": "blog/_posts/关于inline-block问题.html",
-    "revision": "ced0d39708b5f6e5d16e87b6bf2c4ce2"
-  },
-  {
-    "url": "blog/_posts/初学者资源推荐.html",
-    "revision": "bc3900bf3f4119d1ef23dd4857dfa169"
-  },
-  {
-    "url": "blog/_posts/前端学习历程.html",
-    "revision": "4335b06f4bbf19e1d8a379abe06103be"
-  },
-  {
-    "url": "blog/_posts/去除inline-block元素间间距的N种方法.html",
-    "revision": "8f0f0d24e9bda2b93e21c69f98ec876d"
-  },
-  {
-    "url": "blog/_posts/浅谈响应式.html",
-    "revision": "d38b6df48fb45287f44ac2ca805874d8"
-  },
-  {
-    "url": "blog/_posts/浏览器设置不保存缓存.html",
-    "revision": "901ffd426db868e3854ab339ca741c43"
-  },
-  {
-    "url": "blog/_posts/深入理解层叠上下文和层叠顺序.html",
-    "revision": "9079ad53da7f267abd5ea4bf6820472f"
-  },
-  {
-    "url": "blog/_posts/给不了解前端的同学讲前端.html",
-    "revision": "9524afe92b2b7dd071be75534296d42d"
-  },
-  {
-    "url": "blog/_posts/编码规范-（一）HTML.html",
-    "revision": "8c27c24992c49f20cc2cc324de525a18"
-  },
-  {
-    "url": "blog/_posts/编码规范（二）CSS.html",
-    "revision": "cda6820789e73e4795490c4dd3b8dfac"
-  },
-  {
-    "url": "blog/_posts/记第一次博客改版更新.html",
-    "revision": "fbd31a051e68faca30ca7cac942c61a9"
-  },
-  {
-    "url": "blog/_posts/说说CSS学习中的瓶颈.html",
-    "revision": "f44aab3130877098cd57cb243928a5ea"
+    "url": "blog/html语义化.html",
+    "revision": "0c2c6ad4d9bc4c9b92bb4cdedffceb3a"
   },
   {
     "url": "blog/index.html",
-    "revision": "acb9d6ca460f84b7f93b0be31522bd0f"
+    "revision": "dbadb470f5f40d84893087dfb6f1e414"
+  },
+  {
+    "url": "blog/JavaScript-面向对象编程.html",
+    "revision": "09896787b8462eb6b7db0eb1f1fce092"
+  },
+  {
+    "url": "blog/JS变量提升.html",
+    "revision": "405d82efab8df90d5d174f5088ed7bb6"
+  },
+  {
+    "url": "blog/JS变量的创建机制.html",
+    "revision": "f1c8cf88a8f905374582388b18e4e7d0"
+  },
+  {
+    "url": "blog/JS堆栈内存.html",
+    "revision": "c131c40523355e16d4ba6fd2e10d6cbe"
+  },
+  {
+    "url": "blog/JS类型转换总结.html",
+    "revision": "43add411d8ece457902c1d4e52d6ea5f"
+  },
+  {
+    "url": "blog/Markdown添加Latex数学公式.html",
+    "revision": "eecd75252d9b2a4fe62b39bfaa4bfd3f"
+  },
+  {
+    "url": "blog/markdown语法.html",
+    "revision": "bbac38a88e08e5408646487500baa450"
+  },
+  {
+    "url": "blog/sass的使用.html",
+    "revision": "d9176c060d03ffdc7c645948e1bc701f"
+  },
+  {
+    "url": "blog/sublimetext-实用插件介绍.html",
+    "revision": "62b37154766d3c92390a25928b72a2e2"
+  },
+  {
+    "url": "blog/Transform-引起的-z-index-失效‘.html",
+    "revision": "9b296e257d1e17a1bac54c7f92424dfb"
+  },
+  {
+    "url": "blog/像素与viewport概念.html",
+    "revision": "44a7f0a4d40569156afbe893ca8e291a"
+  },
+  {
+    "url": "blog/关于Flex布局.html",
+    "revision": "8a9a62c4f989684f14b96a7fa4071834"
+  },
+  {
+    "url": "blog/关于inline-block问题.html",
+    "revision": "c13f1cadd8d510e95437e14478e3cffb"
+  },
+  {
+    "url": "blog/初学者资源推荐.html",
+    "revision": "7475da7c4287987b2a838252321c706c"
+  },
+  {
+    "url": "blog/前端学习历程.html",
+    "revision": "37621578a250abd208e03b4ebe70a66d"
+  },
+  {
+    "url": "blog/去除inline-block元素间间距的N种方法.html",
+    "revision": "6020e8b72f7143dfca563afa3928671b"
+  },
+  {
+    "url": "blog/浅谈响应式.html",
+    "revision": "048be64ec8b6a89e054bc191be0f8087"
+  },
+  {
+    "url": "blog/浏览器设置不保存缓存.html",
+    "revision": "e2b02730f9c92d4b47e200e15bf673c6"
+  },
+  {
+    "url": "blog/深入理解层叠上下文和层叠顺序.html",
+    "revision": "e809517eab253dbfdbf5bc82438d1cac"
+  },
+  {
+    "url": "blog/给不了解前端的同学讲前端.html",
+    "revision": "784296e57c5087215f35ffcc92b40687"
+  },
+  {
+    "url": "blog/编码规范-（一）HTML.html",
+    "revision": "819cfde3e84676541a8ae3c80798861b"
+  },
+  {
+    "url": "blog/编码规范（二）CSS.html",
+    "revision": "9fdd59407fb63d88393b1f1be5e1523e"
+  },
+  {
+    "url": "blog/记第一次博客改版更新.html",
+    "revision": "f11aafeda63a75d69f1727c9df32a7ad"
+  },
+  {
+    "url": "blog/说说CSS学习中的瓶颈.html",
+    "revision": "93ae1fcb9c29cc8e9b73e8559c8790b7"
   },
   {
     "url": "categories/index.html",
-    "revision": "3532221c8120c314e8737d07b6aafb63"
+    "revision": "c959400d103900fdc81f8d6912777e76"
   },
   {
     "url": "font/iconfont.css",
@@ -429,7 +429,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "973215bcededaae668ed89df8ed64397"
+    "revision": "cc912554fcf73249da9da61a291b9d72"
   },
   {
     "url": "logo.jpg",
