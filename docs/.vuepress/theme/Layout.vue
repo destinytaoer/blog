@@ -92,7 +92,7 @@ import BackToTop from '../components/BackToTop'
 import Blog from '../components/Blog'
 import VueRouter from 'vue-router'
 const routes = [
-  {path: '/blog/:index', component: Blog}
+  {path: '/blog/:index/', component: Blog}
 ]
 const router = new VueRouter({
   mode: 'history',
