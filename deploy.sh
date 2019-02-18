@@ -10,12 +10,12 @@ yarn build
 git add -A
 git commit -m $1
 
-# 将 dist 文件提交到 gh-pages 分支
-# git subtree push --prefix dist origin gh-pages 
-
 # 提交到 master
 # git push origin gh-pages:gh-pages
+git push origin master
 
-git push origin master:master
+# 将 dist 文件提交到 gh-pages 分支
+git subtree push --prefix dist origin gh-pages
+
 
 exit 0

@@ -53,7 +53,7 @@
         </article>
       </li>
     </ul>
-    <Pagination :current="index" :basePath="'/blog/'" :total="10"></Pagination>
+    <Pagination v-if="pageNum > 1" :current="index" :basePath="'/blog/'" :total="pageNum"></Pagination>
   </div>
 </template>
 
@@ -61,7 +61,6 @@
 import TagList from "./common/TagList"
 import Pagination from './common/Pagination'
 
-const routes = []
 export default {
   data() {
     return {
@@ -72,7 +71,7 @@ export default {
       return this.$site.themeConfig.pageSize
     },
     index() {
-      return +this.$route.query.index || 1
+      return +this.$route.params.index || 1
     },
     posts() {
       let start = (this.index - 1) * this.pageSize
@@ -84,7 +83,16 @@ export default {
       return Math.ceil(this.$posts.length / this.pageSize)
     }
   },
+  created() {
+    console.log(this.$route);
+    console.log('blog')
+  },
   methods: {
+  },
+  watch: {
+    index(){
+      window.scrollTo(0, 0)
+    }
   },
   components: {
     TagList,
@@ -119,40 +127,8 @@ export default {
       color: @titleColor;
       font-weight: 300;
       text-decoration: none;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
       text-shadow: rgb(69, 45, 45) 0px 0px 1px, rgb(255, 255, 251) 0px 0px 1px,
         rgb(255, 255, 251) 0px 0px 2px;
-      // font-family: @font-custom;
-      &:hover {
-        color: @titleHoverColor;
-        -webkit-animation: jumpWhite 1.5s ease-in-out infinite alternate;
-        animation: jumpWhite 1.5s ease-in-out infinite alternate;
-      }
-    }
-  }
-  @-webkit-keyframes jumpWhite {
-    from {
-      text-shadow: 0 0 1px @titleHoverColor, 0 0 2px @titleHoverColor,
-        0 0 3px @titleHoverColor, 0 0 5px @titleColor, 0 0 8px @titleColor,
-        0 0 9px @titleColor, 0 0 10px @titleColor, 0 0 15px @titleColor;
-    }
-    to {
-      text-shadow: 0 0 0.5px @titleHoverColor, 0 0 1px @titleHoverColor,
-        0 0 1.5px @titleHoverColor, 0 0 2px @titleColor, 0 0 4px @titleColor,
-        0 0 5px @titleColor, 0 0 6px @titleColor, 0 0 8px @titleColor;
-    }
-  }
-  @keyframes jumpWhite {
-    from {
-      text-shadow: 0 0 1px @titleHoverColor, 0 0 2px @titleHoverColor,
-        0 0 3px @titleHoverColor, 0 0 5px @titleColor, 0 0 8px @titleColor,
-        0 0 9px @titleColor, 0 0 10px @titleColor, 0 0 15px @titleColor;
-    }
-    to {
-      text-shadow: 0 0 0.5px @titleHoverColor, 0 0 1px @titleHoverColor,
-        0 0 1.5px @titleHoverColor, 0 0 2px @titleColor, 0 0 4px @titleColor,
-        0 0 5px @titleColor, 0 0 6px @titleColor, 0 0 8px @titleColor;
     }
   }
   .post-list-item {
@@ -175,6 +151,7 @@ export default {
     .content {
       text-align: left;
       padding: 0;
+      margin: 1rem;
       > *:first-child {
         margin-top: 0;
       }

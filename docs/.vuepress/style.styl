@@ -9,14 +9,28 @@
   flex 1
 
 .fix-footer
-  height: 7.2rem
+  height 7.2rem
   text-align center
   &.post-footer {
-    padding-left: 20rem;
+    padding-left 20rem
   }
 
 @media screen and (max-width: 719px) {
   .fix-footer.post-footer {
-    padding-left: 0;
+    padding-left 0
   }
+}
+
+// 动画样式
+.fade-enter-active,
+.fade-leave-active {
+  transition opacity .5s
+}
+.fade-enter,
+.fade-leave-to {
+  opacity 0
+}
+
+.content blockquote {
+  font-size 16px
 }

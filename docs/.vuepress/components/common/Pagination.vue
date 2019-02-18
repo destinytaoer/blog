@@ -1,32 +1,32 @@
 <template>
-  <div class="pagination" v-if="total > 1">
+  <div class="pagination">
     <span v-if="current > 1" class="item">
-        <router-link :to="`${basePath}?index=${current - 1}`" v-html="prevText" class="link"></router-link>
+        <router-link :to="`${basePath}${current - 1}`" v-html="prevText" class="link"></router-link>
     </span>
     <ul class="numList" v-if="total <= pageRange">
       <li class="item" v-for="index in total">
-        <router-link :to="`${basePath}?index=${index}`" :class="['link',index===current ? 'active' : '']">{{index}}</router-link>
+        <router-link :to="`${basePath}${index}`" :class="['link',index===current ? 'active' : '']">{{index}}</router-link>
       </li>
     </ul>
     <ul class="numList" v-else>
       <li v-if="current - l > 1" class="item">
-        <router-link :to="`${basePath}?index=1`" :class="['link',1===current ? 'active' : '']">1</router-link>
+        <router-link :to="`${basePath}1`" :class="['link',1===current ? 'active' : '']">1</router-link>
       </li>
       <li v-if="current - l > 2" class="item">
         <span class="split">•••</span>
       </li>
       <li class="item" v-for="index in numArr">
-        <router-link :to="`${basePath}?index=${index}`" :class="['link',index ===current ? 'active' : '']">{{index}}</router-link>
+        <router-link :to="`${basePath}${index}`" :class="['link',index ===current ? 'active' : '']">{{index}}</router-link>
       </li>
       <li v-if="current + r < total - 1" class="item">
         <span class="split">•••</span>
       </li>
       <li v-if="current + r < total" class="item">
-        <router-link :to="`${basePath}?index=${total}`" :class="['link',total===current ? 'active' : '']">{{total}}</router-link>
+        <router-link :to="`${basePath}${total}`" :class="['link',total===current ? 'active' : '']">{{total}}</router-link>
       </li>
     </ul>
     <span v-if="current < total" class="item">
-      <router-link :to="`${basePath}?index=${current + 1}`" v-html="nextText" class="link"></router-link>
+      <router-link :to="`${basePath}${current + 1}`" v-html="nextText" class="link"></router-link>
     </span>
   </div>
 </template>
