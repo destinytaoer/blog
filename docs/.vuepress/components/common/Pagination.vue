@@ -1,32 +1,32 @@
 <template>
   <div class="pagination">
     <span v-if="current > 1" class="item">
-        <router-link :to="`${basePath}${current - 1}/`" v-html="prevText" class="link"></router-link>
+        <a @click="$emit('change-index', current - 1)" v-html="prevText" class="link"></a>
     </span>
     <ul class="numList" v-if="total <= pageRange">
       <li class="item" v-for="index in total">
-        <router-link :to="`${basePath}${index}/`" :class="['link',index===current ? 'active' : '']">{{index}}</router-link>
+        <a @click="$emit('change-index', index)" :class="['link',index===current ? 'active' : '']">{{index}}</a>
       </li>
     </ul>
     <ul class="numList" v-else>
       <li v-if="current - l > 1" class="item">
-        <router-link :to="`${basePath}1/`" :class="['link',1===current ? 'active' : '']">1</router-link>
+        <a @click="$emit('change-index', 1)" :class="['link',1===current ? 'active' : '']">1</a>
       </li>
       <li v-if="current - l > 2" class="item">
         <span class="split">•••</span>
       </li>
       <li class="item" v-for="index in numArr">
-        <router-link :to="`${basePath}${index}/`" :class="['link',index ===current ? 'active' : '']">{{index}}</router-link>
+        <a @click="$emit('change-index', index)" :class="['link',index ===current ? 'active' : '']">{{index}}</a>
       </li>
       <li v-if="current + r < total - 1" class="item">
         <span class="split">•••</span>
       </li>
       <li v-if="current + r < total" class="item">
-        <router-link :to="`${basePath}${total}/`" :class="['link',total===current ? 'active' : '']">{{total}}</router-link>
+        <a @click="$emit('change-index', total)" :class="['link',total===current ? 'active' : '']">{{total}}</a>
       </li>
     </ul>
     <span v-if="current < total" class="item">
-      <router-link :to="`${basePath}${current + 1}/`" v-html="nextText" class="link"></router-link>
+      <a @click="$emit('change-index', current + 1)" v-html="nextText" class="link"></a>
     </span>
   </div>
 </template>
@@ -113,6 +113,7 @@ export default {
     .link{
       padding: 0 1rem;
       margin: 0 2px;
+      cursor: pointer;
       -webkit-transition: .4s ease-in-out;
       transition: .4s ease-in-out;
       &:hover, &:active {

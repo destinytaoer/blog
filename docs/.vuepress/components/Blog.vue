@@ -53,7 +53,7 @@
         </article>
       </li>
     </ul>
-    <Pagination v-if="pageNum > 1" :current="index" :basePath="'/blog/'" :total="pageNum"></Pagination>
+    <Pagination @change-index="changeIndex" v-if="pageNum > 1" :current="index" :basePath="'/blog/'" :total="pageNum"></Pagination>
   </div>
 </template>
 
@@ -64,14 +64,12 @@ import Pagination from './common/Pagination'
 export default {
   data() {
     return {
+      index: 1
     };
   },
   computed: {
     pageSize() {
       return this.$site.themeConfig.pageSize
-    },
-    index() {
-      return +this.$route.params.index || 1
     },
     posts() {
       let start = (this.index - 1) * this.pageSize
@@ -83,11 +81,11 @@ export default {
       return Math.ceil(this.$posts.length / this.pageSize)
     }
   },
-  created() {
-    console.log(this.$route);
-    console.log('blog')
-  },
   methods: {
+    changeIndex(i) {
+      console.log(i);
+      this.index = i
+    }
   },
   watch: {
     index(){

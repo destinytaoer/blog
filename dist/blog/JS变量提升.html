@@ -3,28 +3,386 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>destiny&#39;Note</title>
+    <title>JS变量提升 | destiny&#39;Note</title>
     <meta name="description" content="生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。">
     <link rel="icon" href="/favicon.ico">
     
-    <link rel="preload" href="/assets/css/0.styles.f39e54be.css" as="style"><link rel="preload" href="/assets/js/app.6c7b006e.js" as="script"><link rel="preload" href="/assets/js/11.1fd2cea5.js" as="script"><link rel="prefetch" href="/assets/js/10.3ffc1f17.js"><link rel="prefetch" href="/assets/js/12.7dd3910f.js"><link rel="prefetch" href="/assets/js/13.9dfbab85.js"><link rel="prefetch" href="/assets/js/14.7fa2eb90.js"><link rel="prefetch" href="/assets/js/15.4296bb6b.js"><link rel="prefetch" href="/assets/js/16.3e6feb3f.js"><link rel="prefetch" href="/assets/js/17.0e7b68a4.js"><link rel="prefetch" href="/assets/js/18.5e486a05.js"><link rel="prefetch" href="/assets/js/19.24ab7604.js"><link rel="prefetch" href="/assets/js/2.1b003e23.js"><link rel="prefetch" href="/assets/js/20.9200f954.js"><link rel="prefetch" href="/assets/js/21.71a734c3.js"><link rel="prefetch" href="/assets/js/22.e2bbd59c.js"><link rel="prefetch" href="/assets/js/23.e3bfd8b1.js"><link rel="prefetch" href="/assets/js/24.1e925f4e.js"><link rel="prefetch" href="/assets/js/25.da71b70d.js"><link rel="prefetch" href="/assets/js/26.9b14a463.js"><link rel="prefetch" href="/assets/js/27.290e1908.js"><link rel="prefetch" href="/assets/js/28.c4049fc5.js"><link rel="prefetch" href="/assets/js/29.db3e6743.js"><link rel="prefetch" href="/assets/js/3.30cfc8e7.js"><link rel="prefetch" href="/assets/js/30.fa4f7978.js"><link rel="prefetch" href="/assets/js/31.307fa482.js"><link rel="prefetch" href="/assets/js/32.107ec8c7.js"><link rel="prefetch" href="/assets/js/33.e25e4013.js"><link rel="prefetch" href="/assets/js/34.bbb65367.js"><link rel="prefetch" href="/assets/js/35.69266558.js"><link rel="prefetch" href="/assets/js/36.84e9f227.js"><link rel="prefetch" href="/assets/js/37.ea6d89f2.js"><link rel="prefetch" href="/assets/js/38.99c935e6.js"><link rel="prefetch" href="/assets/js/39.70483290.js"><link rel="prefetch" href="/assets/js/4.c77b361f.js"><link rel="prefetch" href="/assets/js/40.2614156d.js"><link rel="prefetch" href="/assets/js/41.28eeb8cc.js"><link rel="prefetch" href="/assets/js/42.7d02fa6e.js"><link rel="prefetch" href="/assets/js/43.72e50f1f.js"><link rel="prefetch" href="/assets/js/44.dfc98972.js"><link rel="prefetch" href="/assets/js/45.b7e741f3.js"><link rel="prefetch" href="/assets/js/46.871649a9.js"><link rel="prefetch" href="/assets/js/47.21a92dc4.js"><link rel="prefetch" href="/assets/js/48.c30eab50.js"><link rel="prefetch" href="/assets/js/49.37954f9e.js"><link rel="prefetch" href="/assets/js/5.dc988766.js"><link rel="prefetch" href="/assets/js/50.73afa37f.js"><link rel="prefetch" href="/assets/js/51.7e5ebf2d.js"><link rel="prefetch" href="/assets/js/6.161ce3fa.js"><link rel="prefetch" href="/assets/js/7.db54423b.js"><link rel="prefetch" href="/assets/js/8.5cd5e8ff.js"><link rel="prefetch" href="/assets/js/9.c6001b16.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.f39e54be.css">
+    <link rel="preload" href="/assets/css/0.styles.aeedd813.css" as="style"><link rel="preload" href="/assets/js/app.dcb4cc71.js" as="script"><link rel="preload" href="/assets/js/3.cad3df8e.js" as="script"><link rel="preload" href="/assets/js/22.e0feedfd.js" as="script"><link rel="prefetch" href="/assets/js/10.559bc0d1.js"><link rel="prefetch" href="/assets/js/11.6b3d528d.js"><link rel="prefetch" href="/assets/js/12.59985332.js"><link rel="prefetch" href="/assets/js/13.e267da32.js"><link rel="prefetch" href="/assets/js/14.cde6208e.js"><link rel="prefetch" href="/assets/js/15.73939856.js"><link rel="prefetch" href="/assets/js/16.c1f8c3e8.js"><link rel="prefetch" href="/assets/js/17.1436faed.js"><link rel="prefetch" href="/assets/js/18.f8c7d590.js"><link rel="prefetch" href="/assets/js/19.3f8356fa.js"><link rel="prefetch" href="/assets/js/2.39b0c024.js"><link rel="prefetch" href="/assets/js/20.e6f8c04c.js"><link rel="prefetch" href="/assets/js/21.cc472f4c.js"><link rel="prefetch" href="/assets/js/23.a3fa1376.js"><link rel="prefetch" href="/assets/js/24.21f8836d.js"><link rel="prefetch" href="/assets/js/25.8f2ad6f5.js"><link rel="prefetch" href="/assets/js/26.c36e611d.js"><link rel="prefetch" href="/assets/js/27.62455642.js"><link rel="prefetch" href="/assets/js/28.b81403b4.js"><link rel="prefetch" href="/assets/js/29.408287d1.js"><link rel="prefetch" href="/assets/js/30.3deaedf8.js"><link rel="prefetch" href="/assets/js/31.aff9ae76.js"><link rel="prefetch" href="/assets/js/32.245d7255.js"><link rel="prefetch" href="/assets/js/33.a53b298e.js"><link rel="prefetch" href="/assets/js/34.91844814.js"><link rel="prefetch" href="/assets/js/35.038031b7.js"><link rel="prefetch" href="/assets/js/36.e33c1044.js"><link rel="prefetch" href="/assets/js/37.38dd1221.js"><link rel="prefetch" href="/assets/js/38.609beddd.js"><link rel="prefetch" href="/assets/js/39.c5ebf47a.js"><link rel="prefetch" href="/assets/js/4.4e467800.js"><link rel="prefetch" href="/assets/js/40.33e3cb09.js"><link rel="prefetch" href="/assets/js/41.9a3c7402.js"><link rel="prefetch" href="/assets/js/42.189de7ec.js"><link rel="prefetch" href="/assets/js/43.f09d6096.js"><link rel="prefetch" href="/assets/js/44.85ae037f.js"><link rel="prefetch" href="/assets/js/45.c027006f.js"><link rel="prefetch" href="/assets/js/46.204cd641.js"><link rel="prefetch" href="/assets/js/47.caddb5a6.js"><link rel="prefetch" href="/assets/js/48.da316fd1.js"><link rel="prefetch" href="/assets/js/49.1ea8cf34.js"><link rel="prefetch" href="/assets/js/5.09a080a8.js"><link rel="prefetch" href="/assets/js/50.a4eb229e.js"><link rel="prefetch" href="/assets/js/51.00e5f317.js"><link rel="prefetch" href="/assets/js/52.0ff063a8.js"><link rel="prefetch" href="/assets/js/53.e37c304c.js"><link rel="prefetch" href="/assets/js/54.f7b09576.js"><link rel="prefetch" href="/assets/js/6.077373f5.js"><link rel="prefetch" href="/assets/js/7.a59b7b51.js"><link rel="prefetch" href="/assets/js/8.37fc8448.js"><link rel="prefetch" href="/assets/js/9.38b349fb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aeedd813.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"><img src="/logo.jpg" alt="destiny'Note" class="logo"> <span class="site-name can-hide">destiny'Note</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">博客</a></div><div class="nav-item"><a href="/visualization/" class="nav-link">数据可视化</a></div><div class="nav-item"><a href="https://www.yuque.com/destinytaoer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="destiny'Note" class="logo"> <span class="site-name can-hide">destiny'Note</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">博客</a></div><div class="nav-item"><a href="/visualization/" class="nav-link">数据可视化</a></div><div class="nav-item"><a href="https://www.yuque.com/destinytaoer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
   语雀
   <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <a href="https://github.com/destinytaoer/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
     GitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">博客</a></div><div class="nav-item"><a href="/visualization/" class="nav-link">数据可视化</a></div><div class="nav-item"><a href="https://www.yuque.com/destinytaoer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">博客</a></div><div class="nav-item"><a href="/visualization/" class="nav-link">数据可视化</a></div><div class="nav-item"><a href="https://www.yuque.com/destinytaoer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
   语雀
   <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <a href="https://github.com/destinytaoer/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
     GitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Home</span> <!----></p> <ul class="sidebar-group-items"></ul></div></li></ul> </div> <div class="home"><div class="hero"><img src="/logo.jpg" alt="hero"> <h1>destiny'Note</h1> <p class="description">
-      best for the best!
-    </p> <p class="action"><a href="/blog/" class="nav-link action-button">前往个人博客</a></p></div> <div class="features"><div class="feature"><h2>个人博客</h2> <p>分享前端技术笔记、转载一些优质文章以及资源</p></div><div class="feature"><h2>数据可视化</h2> <p>关于数据可视化的专栏，包含 canvas、svg、d3 等</p></div></div> <div class="content custom"></div> <!----></div> <footer class="fix-footer"><p>© 2016-2019 <i class="icon icon-love"></i> destiny</p> <span><i class="icon icon-myself"><span id="busuanzi_container_site_uv" style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>JS变量提升</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/JS%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87.html#_1-变量提升的概念" class="sidebar-link">1. 变量提升的概念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/JS%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87.html#深入理解变量提升" class="sidebar-link">深入理解变量提升</a></li></ul></li><li><a href="/blog/JS%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87.html#_2-带-var-和-不带-var-的区别" class="sidebar-link">2. 带 var 和 不带 var 的区别</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/JS%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87.html#_3-变量提升的特殊情况" class="sidebar-link">3. 变量提升的特殊情况</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/JS%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87.html#_4-重名问题的处理" class="sidebar-link">4. 重名问题的处理</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="custom-layout"><div class="post" data-v-70f0aef2><div class="content" data-v-70f0aef2><h2 id="_1-变量提升的概念"><a href="#_1-变量提升的概念" aria-hidden="true" class="header-anchor">#</a> 1. 变量提升的概念</h2> <p>变量提升的概念：
+当栈内存（作用域）形成，JS 代码自上而下执行之前，浏览器首先会把所有带 <code>var / function</code> 关键字开头的进行提前声明或者定义，这种预先处理机制称为“变量提升”。</p> <blockquote><p>声明（declare）：<code>var a</code> （默认 <code>undefined</code>）
+定义（defined）：<code>a = 12</code>（定义其实就是赋值操作）</p></blockquote> <p>在变量提升阶段：</p> <ul><li>带 <code>var</code>  是只提升声明未定义（给个默认值 <code>undefined</code>）</li> <li>带 <code>function</code> 是提升声明和定义都完成了</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined，如果后面都没有声明，那么就会报错</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+
+<span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 1，可以直接使用，如果后面没有定义，那么会报错</span>
+<span class="token keyword">function</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>因为用 <code>function</code> 关键字声明的函数 ，在变量提升阶段已经赋好值了，所以我们可以在 JS 文件中的任意位置调用这个函数</p></blockquote> <h3 id="深入理解变量提升"><a href="#深入理解变量提升" aria-hidden="true" class="header-anchor">#</a> 深入理解变量提升</h3> <p><strong>变量提升只发生在当前作用域</strong>
+开始加载页面的时候只对全局作用域下进行变量提升，因为此时函数中存储的都是字符串而已</p> <p>在全局作用域下声明的函数或者变量是全局变量，同理，在私有作用域下声明的变量是私有变量[带 <code>var/function</code> 的才是声明]</p> <p><strong>代码执行时，跳过已提升的声明和定义</strong>
+浏览器很懒，做过的事情不会重复执行第二遍，也就是当代码执行遇到创建函数这部分代码后，直接跳过即可。遇到变量声明时，也会直接跳过声明，进行赋值。因为在提升阶段就已经完成变量的声明和函数的赋值操作。</p> <p><strong>函数执行，形成私有作用域后，也会进行变量提升</strong>
+私有作用域形成后，会先进行形参赋值，然后进行变量提升</p> <p><strong>ES5 中的作用域</strong>
+在 ES5 语法规范中，只有全局作用域和函数执行的私有作用域，其他大括号不会形成栈内存</p> <h2 id="_2-带-var-和-不带-var-的区别"><a href="#_2-带-var-和-不带-var-的区别" aria-hidden="true" class="header-anchor">#</a> 2. 带 var 和 不带 var 的区别</h2> <p>在全局作用域下声明一个变量，也相当于个 <code>window</code> 全局对象设置了一个属性，变量值就是属性值。而私有作用域中声明的私有变量和 <code>window</code> 没有关系。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+<span class="token string">'a'</span> <span class="token keyword">in</span> window<span class="token punctuation">;</span> <span class="token comment">//=&gt; true 在变量提升阶段，在全局作用域中声明了一个变量 a，此时就已经把 a 当作属性添加到 window 上了，只不过此时还没有给 a 赋值，默认值为 undefined</span>
+
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span> 
+a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 全局变量 a 12</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; window 的属性 a 12</span>
+
+<span class="token comment">//=&gt; 全局变量和 window 中的属性存在映射机制</span>
+a <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 13</span>
+window<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span>
+a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 14</span>
+</code></pre></div><p>全局作用域中：
+不带 <code>var</code> 时，本质是给 <code>window</code> 添加属性
+在读取属性时，首先检测其是否是变量，是变量则读取其值，不是变量，则读取 <code>window</code> 中的属性，<code>window</code> 也没有这个属性，则报错。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 报错</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined，这里是对象机制，没有这个属性则返回 undefined</span>
+<span class="token string">'a'</span> <span class="token keyword">in</span> window<span class="token punctuation">;</span> <span class="token comment">//=&gt; false，说明 window 中没有 a</span>
+a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 相当于 window.a = 12，此时的 a 不是变量，而是 window 的属性</span>
+a<span class="token punctuation">;</span><span class="token comment">//=&gt; 12</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 12</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span> 
+<span class="token comment">//=&gt; 此时 b 是带 var 的，相当于 var a = 12; var b = 13;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> b <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token comment">//=&gt; 此时 b 不带 var 的，相当于 var a = 12; b = 12;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined undefined</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined 12</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> b <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 13, 13</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 12, 13</span>
+</code></pre></div><p>私有作用域中：</p> <ul><li>带 var 的在私有作用域变量提升阶段，都声明为私有变量，和外界没有任何关系</li> <li>不带 var 的不是私有变量，会向它的上级作用域查找，一直找到 window 为止（我们把这种查找机制叫做作用域链）</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  b <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  <span class="token string">'b'</span> <span class="token keyword">in</span> window<span class="token punctuation">;</span>
+  <span class="token comment">//=&gt; true，在作用域链查找过程中，如果知道找到全局作用域 window 中也没有这个变量，则是相当于给 window 设置了一个属性 b</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 12</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 12，此时读取的也是 window 的属性</span>
+</code></pre></div><p>具体分析：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; f 函数体</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//=&gt; 20</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 报错，此时 a=20，不是函数</span>
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*
+ * 变量提升过程：
+ * var a; function a = xxxfff000
+ * 代码执行
+ * a() --&gt; a 执行，里面输出 a，也就是地址对应函数
+ * a = 10; --&gt; 这是的变量 a 从地址变成了数字 10
+ * a = 20; --&gt; 这时的变量 a 从数字 10 变成数字 20
+ * console.log(a); --&gt; 输出变量 20
+ * a() --&gt; a 执行，相当于 20()，不是函数，所以直接报错：a is not a function
+ */</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>fn();// 15
+var n = 13;
+console.log(n); // 13
+fn(); // 15
+console.log(n);//15
+function fn(){
+  n = 15;
+  console.log(n);
+}
+fn(); // 15
+alert(n);//15
+// 在变量提升阶段   n :undefined
+// fn()           n : 15
+// n = 13;        n : 13
+// fn()           n : 15
+</code></pre></div><h2 id="_3-变量提升的特殊情况"><a href="#_3-变量提升的特殊情况" aria-hidden="true" class="header-anchor">#</a> 3. 变量提升的特殊情况</h2> <p>（1）等号右边的不会进行变量提升</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 变量提升，可以执行</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 变量提升，只提升了声明未定义，报错 a is not a function</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 不提升，报错，f is not defined</span>
+<span class="token keyword">var</span> <span class="token function-variable function">a</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><p>（2）条件语句中的变量提升</p> <ul><li>对于 <code>var</code> 没有影响的，不管条件是否成立，都会进行变量提升</li> <li>对于 <code>function</code> 比较特殊：
+<ul><li>在老版本浏览器渲染机制下，声明加定义都提升</li> <li>为了迎合 ES6 中的块级作用域，新版本浏览器对于函数，不管条件是否成立，都只提升声明，没有定义，类似 <code>var</code></li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum2<span class="token punctuation">,</span>sum3<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined undefined</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> f <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">sum2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> g <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">sum3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum2<span class="token punctuation">,</span>sum3<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined f:function sum3(){}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined 14</span>
+</code></pre></div><p>当条件成立，进入到判断体中（在 ES6 中它是一个块级作用域，不完整的块级作用域），第一件事并不是代码执行，而是类似于变量提升一样先把函数进行定义，也就是判断体中代码执行之前，函数就已经赋值了。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 函数本身</span>
+  <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>（3）匿名函数、自执行函数、等号右边函数和 <code>return</code> 返回的函数都不会有变量提升，只有开头直接使用 <code>function</code> 声明的才会变量提升</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//=&gt; 即使加上函数名，也不会变量提升</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">a</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+obj<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//=&gt; e 不会提升</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token function">e</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>（4）函数的形参与变量提升</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">13</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+
+<span class="token keyword">var</span> n<span class="token operator">=</span><span class="token number">13</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn2</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 在变量提升之前就有了一个形参赋值的过程，也就是相当于</span>
+  <span class="token comment">// n = 13</span>
+  <span class="token comment">// var n 这里 n 的值不会改变，仍是 13</span>
+  <span class="token comment">// console.log(n); //13</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> n<span class="token operator">=</span><span class="token number">14</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn2</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//=&gt; 13 14</span>
+</code></pre></div><h2 id="_4-重名问题的处理"><a href="#_4-重名问题的处理" aria-hidden="true" class="header-anchor">#</a> 4. 重名问题的处理</h2> <ol><li><code>var</code> 和 <code>function</code> 关键字声明的名字，都是变量，只是存储的值不同。取相同的名字，也是重名</li> <li><strong>关于重名的处理：如果名字重复了，不会重新声明，但是会重新的定义（赋值），不管是变量提升阶段还是代码执行阶段都是如此。</strong></li></ol> <blockquote><p>需要注意的是：在变量提升时，如果变量没有值，才会给它默认的值 <code>undefined</code>，如果已经有值，那么这一步不会执行</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+ * 变量提升阶段
+ * function a 定义，后面的 var a 重名，不会重新声明，所以被忽略
+ */</span>
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+ * 变量提升阶段
+ * 会把函数声明和定义全部提升，重名的时候，也是在这个阶段进行重新定义
+ *
+ * 后面代码执行会忽略全部变量声明、函数声明和定义
+ * 
+ */</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 4</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 4</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 4</span>
+<span class="token keyword">var</span> fn <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 报错，fn is not a function</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote></div> <div class="page-edit" data-v-70f0aef2><div class="edit-link" data-v-70f0aef2><a href="https://github.com/destinytaoer/blog/edit/master/docs/blog/JS变量提升.md" target="_blank" rel="noopener noreferrer" data-v-70f0aef2>编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" data-v-70f0aef2 data-v-70f0aef2><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated" data-v-70f0aef2><span class="prefix" data-v-70f0aef2>上次更新时间: </span> <span class="time" data-v-70f0aef2>2018-08-21 03:34:53</span></div></div> <div class="page-nav" data-v-70f0aef2><p class="inner" data-v-70f0aef2><span class="prev" data-v-70f0aef2>
+        ←
+        <a href="/blog/JS%E5%A0%86%E6%A0%88%E5%86%85%E5%AD%98.html" class="prev" data-v-70f0aef2>
+          JS堆栈内存
+        </a></span> <span class="next" data-v-70f0aef2><a href="/blog/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E6%94%B9%E7%89%88%E6%9B%B4%E6%96%B0.html" data-v-70f0aef2>
+          记第一次博客改版更新
+        </a>
+        →
+      </span></p></div></div></div> <div class="page"> <div class="content"><h2 id="_1-变量提升的概念"><a href="#_1-变量提升的概念" aria-hidden="true" class="header-anchor">#</a> 1. 变量提升的概念</h2> <p>变量提升的概念：
+当栈内存（作用域）形成，JS 代码自上而下执行之前，浏览器首先会把所有带 <code>var / function</code> 关键字开头的进行提前声明或者定义，这种预先处理机制称为“变量提升”。</p> <blockquote><p>声明（declare）：<code>var a</code> （默认 <code>undefined</code>）
+定义（defined）：<code>a = 12</code>（定义其实就是赋值操作）</p></blockquote> <p>在变量提升阶段：</p> <ul><li>带 <code>var</code>  是只提升声明未定义（给个默认值 <code>undefined</code>）</li> <li>带 <code>function</code> 是提升声明和定义都完成了</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined，如果后面都没有声明，那么就会报错</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+
+<span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 1，可以直接使用，如果后面没有定义，那么会报错</span>
+<span class="token keyword">function</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>因为用 <code>function</code> 关键字声明的函数 ，在变量提升阶段已经赋好值了，所以我们可以在 JS 文件中的任意位置调用这个函数</p></blockquote> <h3 id="深入理解变量提升"><a href="#深入理解变量提升" aria-hidden="true" class="header-anchor">#</a> 深入理解变量提升</h3> <p><strong>变量提升只发生在当前作用域</strong>
+开始加载页面的时候只对全局作用域下进行变量提升，因为此时函数中存储的都是字符串而已</p> <p>在全局作用域下声明的函数或者变量是全局变量，同理，在私有作用域下声明的变量是私有变量[带 <code>var/function</code> 的才是声明]</p> <p><strong>代码执行时，跳过已提升的声明和定义</strong>
+浏览器很懒，做过的事情不会重复执行第二遍，也就是当代码执行遇到创建函数这部分代码后，直接跳过即可。遇到变量声明时，也会直接跳过声明，进行赋值。因为在提升阶段就已经完成变量的声明和函数的赋值操作。</p> <p><strong>函数执行，形成私有作用域后，也会进行变量提升</strong>
+私有作用域形成后，会先进行形参赋值，然后进行变量提升</p> <p><strong>ES5 中的作用域</strong>
+在 ES5 语法规范中，只有全局作用域和函数执行的私有作用域，其他大括号不会形成栈内存</p> <h2 id="_2-带-var-和-不带-var-的区别"><a href="#_2-带-var-和-不带-var-的区别" aria-hidden="true" class="header-anchor">#</a> 2. 带 var 和 不带 var 的区别</h2> <p>在全局作用域下声明一个变量，也相当于个 <code>window</code> 全局对象设置了一个属性，变量值就是属性值。而私有作用域中声明的私有变量和 <code>window</code> 没有关系。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+<span class="token string">'a'</span> <span class="token keyword">in</span> window<span class="token punctuation">;</span> <span class="token comment">//=&gt; true 在变量提升阶段，在全局作用域中声明了一个变量 a，此时就已经把 a 当作属性添加到 window 上了，只不过此时还没有给 a 赋值，默认值为 undefined</span>
+
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span> 
+a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 全局变量 a 12</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; window 的属性 a 12</span>
+
+<span class="token comment">//=&gt; 全局变量和 window 中的属性存在映射机制</span>
+a <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 13</span>
+window<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span>
+a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 14</span>
+</code></pre></div><p>全局作用域中：
+不带 <code>var</code> 时，本质是给 <code>window</code> 添加属性
+在读取属性时，首先检测其是否是变量，是变量则读取其值，不是变量，则读取 <code>window</code> 中的属性，<code>window</code> 也没有这个属性，则报错。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 报错</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined，这里是对象机制，没有这个属性则返回 undefined</span>
+<span class="token string">'a'</span> <span class="token keyword">in</span> window<span class="token punctuation">;</span> <span class="token comment">//=&gt; false，说明 window 中没有 a</span>
+a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 相当于 window.a = 12，此时的 a 不是变量，而是 window 的属性</span>
+a<span class="token punctuation">;</span><span class="token comment">//=&gt; 12</span>
+window<span class="token punctuation">.</span>a<span class="token punctuation">;</span> <span class="token comment">//=&gt; 12</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span> 
+<span class="token comment">//=&gt; 此时 b 是带 var 的，相当于 var a = 12; var b = 13;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> b <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token comment">//=&gt; 此时 b 不带 var 的，相当于 var a = 12; b = 12;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined undefined</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined 12</span>
+  <span class="token keyword">var</span> a <span class="token operator">=</span> b <span class="token operator">=</span> <span class="token number">13</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 13, 13</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 12, 13</span>
+</code></pre></div><p>私有作用域中：</p> <ul><li>带 var 的在私有作用域变量提升阶段，都声明为私有变量，和外界没有任何关系</li> <li>不带 var 的不是私有变量，会向它的上级作用域查找，一直找到 window 为止（我们把这种查找机制叫做作用域链）</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  b <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  <span class="token string">'b'</span> <span class="token keyword">in</span> window<span class="token punctuation">;</span>
+  <span class="token comment">//=&gt; true，在作用域链查找过程中，如果知道找到全局作用域 window 中也没有这个变量，则是相当于给 window 设置了一个属性 b</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 12</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 12，此时读取的也是 window 的属性</span>
+</code></pre></div><p>具体分析：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; f 函数体</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">//=&gt; 20</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 报错，此时 a=20，不是函数</span>
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*
+ * 变量提升过程：
+ * var a; function a = xxxfff000
+ * 代码执行
+ * a() --&gt; a 执行，里面输出 a，也就是地址对应函数
+ * a = 10; --&gt; 这是的变量 a 从地址变成了数字 10
+ * a = 20; --&gt; 这时的变量 a 从数字 10 变成数字 20
+ * console.log(a); --&gt; 输出变量 20
+ * a() --&gt; a 执行，相当于 20()，不是函数，所以直接报错：a is not a function
+ */</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>fn();// 15
+var n = 13;
+console.log(n); // 13
+fn(); // 15
+console.log(n);//15
+function fn(){
+  n = 15;
+  console.log(n);
+}
+fn(); // 15
+alert(n);//15
+// 在变量提升阶段   n :undefined
+// fn()           n : 15
+// n = 13;        n : 13
+// fn()           n : 15
+</code></pre></div><h2 id="_3-变量提升的特殊情况"><a href="#_3-变量提升的特殊情况" aria-hidden="true" class="header-anchor">#</a> 3. 变量提升的特殊情况</h2> <p>（1）等号右边的不会进行变量提升</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 变量提升，可以执行</span>
+<span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 变量提升，只提升了声明未定义，报错 a is not a function</span>
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 不提升，报错，f is not defined</span>
+<span class="token keyword">var</span> <span class="token function-variable function">a</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><p>（2）条件语句中的变量提升</p> <ul><li>对于 <code>var</code> 没有影响的，不管条件是否成立，都会进行变量提升</li> <li>对于 <code>function</code> 比较特殊：
+<ul><li>在老版本浏览器渲染机制下，声明加定义都提升</li> <li>为了迎合 ES6 中的块级作用域，新版本浏览器对于函数，不管条件是否成立，都只提升声明，没有定义，类似 <code>var</code></li></ul></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum2<span class="token punctuation">,</span>sum3<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined undefined</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&gt;</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> f <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">sum2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> g <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">sum3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum2<span class="token punctuation">,</span>sum3<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined f:function sum3(){}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined 14</span>
+</code></pre></div><p>当条件成立，进入到判断体中（在 ES6 中它是一个块级作用域，不完整的块级作用域），第一件事并不是代码执行，而是类似于变量提升一样先把函数进行定义，也就是判断体中代码执行之前，函数就已经赋值了。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 函数本身</span>
+  <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>（3）匿名函数、自执行函数、等号右边函数和 <code>return</code> 返回的函数都不会有变量提升，只有开头直接使用 <code>function</code> 声明的才会变量提升</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//=&gt; 即使加上函数名，也不会变量提升</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">a</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+obj<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//=&gt; e 不会提升</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token function">e</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>（4）函数的形参与变量提升</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">13</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; undefined</span>
+
+<span class="token keyword">var</span> n<span class="token operator">=</span><span class="token number">13</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn2</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 在变量提升之前就有了一个形参赋值的过程，也就是相当于</span>
+  <span class="token comment">// n = 13</span>
+  <span class="token comment">// var n 这里 n 的值不会改变，仍是 13</span>
+  <span class="token comment">// console.log(n); //13</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> n<span class="token operator">=</span><span class="token number">14</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">fn2</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//=&gt; 13 14</span>
+</code></pre></div><h2 id="_4-重名问题的处理"><a href="#_4-重名问题的处理" aria-hidden="true" class="header-anchor">#</a> 4. 重名问题的处理</h2> <ol><li><code>var</code> 和 <code>function</code> 关键字声明的名字，都是变量，只是存储的值不同。取相同的名字，也是重名</li> <li><strong>关于重名的处理：如果名字重复了，不会重新声明，但是会重新的定义（赋值），不管是变量提升阶段还是代码执行阶段都是如此。</strong></li></ol> <blockquote><p>需要注意的是：在变量提升时，如果变量没有值，才会给它默认的值 <code>undefined</code>，如果已经有值，那么这一步不会执行</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+ * 变量提升阶段
+ * function a 定义，后面的 var a 重名，不会重新声明，所以被忽略
+ */</span>
+<span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/*
+ * 变量提升阶段
+ * 会把函数声明和定义全部提升，重名的时候，也是在这个阶段进行重新定义
+ *
+ * 后面代码执行会忽略全部变量声明、函数声明和定义
+ * 
+ */</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 4</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 4</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 4</span>
+<span class="token keyword">var</span> fn <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//=&gt; 报错，fn is not a function</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+<span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/destinytaoer/blog/edit/master/docs/blog/JS变量提升.md" target="_blank" rel="noopener noreferrer">编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新时间: </span> <span class="time">2019-2-18 14:01:52</span></div></div> <!----> </div> <footer class="fix-footer post-footer"><p>© 2016-2019 <i class="icon icon-love"></i> destiny</p> <span><i class="icon icon-myself"><span id="busuanzi_container_site_uv" style="display:none">
           访问用户：<span id="busuanzi_value_site_uv"></span></span>人</i> <i class="icon icon-eye"><span id="busuanzi_container_site_pv" style="display:none">
           访问次数：<span id="busuanzi_value_site_pv"></span></span>次
       </i></span></footer> <div class="back-to-ceiling" style="display:none;" data-v-5bd7d9f4 data-v-5bd7d9f4><i class="icon icon-top" data-v-5bd7d9f4></i></div> <!----></div></div>
-    <script src="/assets/js/app.6c7b006e.js" defer></script><script src="/assets/js/11.1fd2cea5.js" defer></script>
+    <script src="/assets/js/app.dcb4cc71.js" defer></script><script src="/assets/js/3.cad3df8e.js" defer></script><script src="/assets/js/22.e0feedfd.js" defer></script>
   </body>
 </html>

@@ -41,7 +41,6 @@
     <Home v-else-if="$page.frontmatter.home" />
 
     <Page
-      v-else-if="$page.path !== ''"
       :sidebar-items="sidebarItems"
     >
       <slot
@@ -53,7 +52,7 @@
         slot="bottom"
       />
     </Page>
-    <router-view v-else></router-view>
+    <!-- <router-view v-else></router-view> -->
     <footer :class="['fix-footer', shouldShowSidebar ? 'post-footer' : '']">
       <p>© 2016-{{present}} <i class="icon icon-love"></i> destiny</p>
       <span>
@@ -89,17 +88,17 @@ import Sidebar from "./Sidebar.vue";
 import SWUpdatePopup from "./SWUpdatePopup.vue";
 import { resolveSidebarItems } from "./util";
 import BackToTop from '../components/BackToTop'
-import Blog from '../components/Blog'
-import VueRouter from 'vue-router'
-const routes = [
-  {path: '/blog/:index/', component: Blog}
-]
-const router = new VueRouter({
-  mode: 'history',
-  routes
-})
+// import Blog from '../components/Blog'
+// import VueRouter from 'vue-router'
+// const routes = [
+//   {path: '/blog/:index/', component: Blog}
+// ]
+// const router = new VueRouter({
+//   mode: 'history',
+//   routes
+// })
 export default {
-  components: { Home, Blog, Page, Sidebar, Navbar, SWUpdatePopup, BackToTop },
+  components: { Home, Page, Sidebar, Navbar, SWUpdatePopup, BackToTop },
 
   data() {
     return {
@@ -128,8 +127,7 @@ export default {
     },
 
     shouldShowSidebar() {
-      const { frontmatter, path } = this.$page;
-      if (path === '') return false
+      const { frontmatter } = this.$page;
       return (
         frontmatter.layout === "post" ||
         !frontmatter.layout &&
@@ -286,8 +284,7 @@ export default {
     onSWUpdated(e) {
       this.swUpdateEvent = e;
     }
-  },
-  router
+  }
 };
 </script>
 
