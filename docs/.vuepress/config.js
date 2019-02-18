@@ -3,10 +3,10 @@ module.exports = {
   description: "生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。",
   base: '/',
   dest: './dist/',
-  lang: 'zh-CN',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  // 主题配置
   themeConfig: {
     logo: '/logo.jpg',
     pageSize: 5,
@@ -54,6 +54,7 @@ module.exports = {
     }
   },
   ga: 'UA-134526816-1',
+  // 内容更新的刷新提示
   serviceWorker: true,
   updatePopup: {
     message: '有内容更新',

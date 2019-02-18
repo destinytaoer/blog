@@ -18,7 +18,7 @@ comments: true
   - QQ：1848765519
   - GitHub：destinytaoer
 
-> **[博文前言](/blog/_posts/hello-world.html)**
+> **[博文前言](/blog/hello-world.html)**
 
 ## 共勉
 
