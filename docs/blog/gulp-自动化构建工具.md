@@ -199,4 +199,4 @@ gulp.task('default', [
 >注释写成/\*! 的形式，就不会被压缩，可以用来写版权声明等信息
 
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

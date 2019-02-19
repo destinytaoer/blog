@@ -18,16 +18,16 @@
           </h2>
           <ul class="post-meta">
             <li>
-              <i class="icon icon-lg icon-calendar-o"></i>
-              更新于：
+              <i class="icon icon-calendar"></i>
               <time
-                :datetime="post.frontmatter.update"
+                :datetime="post.createdAt"
                 itemprop="dateUpdate"
               >
-                {{post.updatedAt}}</time>
+                {{post.createdAt}}</time>
             </li>
             <li>
-              {{post.frontmatter.category}}
+              <i class="icon icon-folder-open"></i>
+              <router-link :to="`/categories/${post.frontmatter.category}/`">{{post.frontmatter.category}}</router-link>
             </li>
           </ul>
 
@@ -83,7 +83,6 @@ export default {
   },
   methods: {
     changeIndex(i) {
-      console.log(i);
       this.index = i
     }
   },
@@ -173,15 +172,19 @@ export default {
     font-size: 14px;
     list-style: none;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    li + li {
+      margin-left: 1rem;
+    }
     a {
       color: #999;
+      border-bottom: 1px dashed #999;
     }
     .icon {
-      vertical-align: middle;
-      font: normal normal normal 14px/1 FontAwesome;
-    }
-    i {
-      margin: 0 4px;
+      vertical-align: top;
+      line-height: 19px;
     }
   }
   .post-more {

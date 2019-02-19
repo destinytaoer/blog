@@ -229,4 +229,4 @@ type: tags
 >胖逆的嘟嘟的博文：
 [hexo 的八篇干货](https://www.cnblogs.com/tengj/category/809716.html)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

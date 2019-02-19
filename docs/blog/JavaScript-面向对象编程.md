@@ -254,4 +254,4 @@ json格式的发明人Douglas Crockford，提出了一个object()函数，可以
 	　　var Doctor = deepCopy(Chinese);
 
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

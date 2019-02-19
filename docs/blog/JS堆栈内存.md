@@ -48,4 +48,4 @@ fn(7)(8); //=>16, i = 7 n = 8，执行 n + (++i) => 8 + 8 = 16
 f(4); //=>8, i = 3 n = 4，执行 n + (++i) => 4 + 4 = 8
 ```
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

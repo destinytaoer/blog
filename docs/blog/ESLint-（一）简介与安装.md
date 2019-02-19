@@ -47,4 +47,4 @@ npm install -g eslint
 >[ESLint（二）配置文件](https://destinytaoer.cn/b0fbee66)
 [起步](https://eslint.org/docs/user-guide/getting-started)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

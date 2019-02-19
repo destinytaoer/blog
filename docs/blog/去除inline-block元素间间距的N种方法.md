@@ -215,4 +215,4 @@ ul {
 > 原文转自：[[张鑫旭-鑫空间-鑫生活](https://www.zhangxinxu.com/)](https://www.zhangxinxu.com/)
   本文地址：[去除inline-block元素间间距的N种方法](https://www.zhangxinxu.com/wordpress/?p=2357)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

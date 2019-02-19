@@ -228,4 +228,4 @@ Webkit 内核的浏览器，必须加上`-webkit`前缀：
 ## 引自
 > 本文引自阮一峰的网络日志：[Flex 布局教程：语法篇](https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

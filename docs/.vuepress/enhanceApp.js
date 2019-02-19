@@ -1,13 +1,12 @@
 import moment from 'moment'
-
 const dataMixin = {
   computed: {
     $posts () {
       const pages = this.$site.pages
       const pageFilter = p => p.frontmatter.layout === 'post'
       const pageSort = (p1, p2) => {
-        let dateA = new Date(p1.updatedAt).getTime()
-        let dateB = new Date(p2.updatedAt).getTime()
+        let dateA = new Date(p1.createdAt).getTime()
+        let dateB = new Date(p2.createdAt).getTime()
         return dateB - dateA;
       }
       const pageMap = p => {

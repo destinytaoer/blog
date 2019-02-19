@@ -202,4 +202,4 @@ obj1 == obj2 //=> true
 []==![] //=> true，先算 ![] 为 false，然后都转换为数字再比较
 ```
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

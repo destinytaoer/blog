@@ -41,6 +41,7 @@
     <Home v-else-if="$page.frontmatter.home" />
 
     <Page
+      v-else
       :sidebar-items="sidebarItems"
     >
       <slot
@@ -288,5 +289,5 @@ export default {
 };
 </script>
 
-<style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="prismjs/themes/prism.css"></style>
 <style src="./styles/theme.styl" lang="stylus"></style>

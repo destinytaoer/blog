@@ -120,4 +120,4 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 ## 十、尽量避免使用 JavaScript 生成的标签
 通过 JavaScript 生成的标签让内容变得不易查找、编辑，对搜索引擎不友好，并且降低性能。能避免时尽量避免。
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

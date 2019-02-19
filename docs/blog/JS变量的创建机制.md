@@ -105,4 +105,4 @@ console.log(arr1, arr2); //=> 1, 0, 4, 2
 5. 此时两个变量关联的内存不再一样，对其的操作不再相互影响，此时 arr1: `[1,4]` arr2:`[4,5]`
 6. 再次赋值后，arr1: `[1,0]` arr2: `[4,2]`
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

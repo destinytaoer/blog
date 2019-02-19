@@ -228,4 +228,4 @@ CSS 代码的编写，应该尽量简洁、高性能、高可维护性，达到�
 
 将这些配置信息添加到项目的 `.editorconfig` 文件中
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

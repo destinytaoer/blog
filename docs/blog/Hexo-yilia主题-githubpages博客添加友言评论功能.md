@@ -134,4 +134,4 @@ root: /
 [github怎么绑定自己的域名？](https://www.zhihu.com/question/31377141)
 
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

@@ -309,4 +309,4 @@ vertical-align会增加容器的高度，而margin-bottom负值则是减小！
 > 关于作者
 > **张鑫旭**，09年华中科技大学毕业，现上海，就职于阅文集团，专注web前端偏前领域，钓鱼爱好者。
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

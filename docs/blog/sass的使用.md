@@ -299,4 +299,4 @@ SASS允许用户编写自己的函数。
 [Sass用法指南](https://www.ruanyifeng.com/blog/2012/06/sass.html)
 [Sass Guide](https://www.w3cplus.com/sassguide/syntax.html)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

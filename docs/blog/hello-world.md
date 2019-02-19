@@ -59,4 +59,4 @@ hello，大家好。创建之初，希望大家能够从我这里学到知识，
 - wordcount 字数统计
 - 站点地图
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

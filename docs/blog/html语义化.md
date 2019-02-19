@@ -99,4 +99,4 @@ HTML是超文本标记（Hyper Text Markup Language）的缩写，在网页设�
 
   8. figure独立的流内容
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

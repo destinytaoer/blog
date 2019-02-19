@@ -85,4 +85,4 @@ web初期，网页渲染在手机上，会只显示页面的其中一部分。�
 ## 参考
 >慕课网教程：[Hello，移动WEB](https://www.imooc.com/learn/494)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

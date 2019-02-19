@@ -81,4 +81,4 @@ MDN上有相关的介绍：
 >张鑫旭博文：[深入理解css中的层叠上下文和层叠顺序](https://www.zhangxinxu.com/wordpress/2016/01/understand-css-stacking-context-order-z-index/)Segmentfault回答：[Transform 引起的 z-index "失效"](https://segmentfault.com/q/1010000002480824)
 豆瓣文章：[小心 CSS3 Transform 引起的 z-index "失效"](https://www.douban.com/note/343402554/)
 
-<blockquote class="blockquote-center">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</blockquote>
+<common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>
