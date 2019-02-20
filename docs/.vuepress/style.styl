@@ -31,6 +31,21 @@
   opacity 0
 }
 
+// 文章样式
 .content blockquote {
   font-size 16px
+}
+
+// 代码块样式
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+  background none
+}
+
+code[class*=language-], pre[class*=language-] {
+  text-shadow none
+}
+
+.content code {
+  color #c7254e
+  background #f9f2f4
 }

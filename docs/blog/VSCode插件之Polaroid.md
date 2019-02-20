@@ -5,6 +5,7 @@ category: 前端资源
 tags:
   - VSCode
   - 编辑器
+  - 插件
 date: 2019-02-18 19:31
 update: 2019-02-18 19:31
 comments: true

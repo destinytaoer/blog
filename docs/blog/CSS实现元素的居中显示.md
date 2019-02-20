@@ -3,8 +3,7 @@ title: CSS实现元素的居中显示
 layout: post
 category: 前端技术
 tags:
-  - web前端
-  - css
+  - CSS
 date: 2017-10-17 23:26:12
 update: 2017-10-18 23:18:12
 comments: true
@@ -138,6 +137,6 @@ img{
 }
 ```
 简洁、高效，在低版本IE存在兼容问题，但是现在几乎不用考虑了。
->详细语法请查看我的博文：[关于Flex布局](https://www.jianshu.com/p/90dbbbecdf3b)
+> 详细语法请查看我的博文：[关于Flex布局](https://www.jianshu.com/p/90dbbbecdf3b)
 
 <common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

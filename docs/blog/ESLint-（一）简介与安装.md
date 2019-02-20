@@ -43,8 +43,10 @@ npm install -g eslint
 ```git
 ./node_modules/.bin/eslint yourfile.js
 ```
+
 ## 参考
->[ESLint（二）配置文件](https://destinytaoer.cn/b0fbee66)
-[起步](https://eslint.org/docs/user-guide/getting-started)
+
+- [ESLint（二）配置文件](https://destinytaoer.cn/b0fbee66)
+- [起步](https://eslint.org/docs/user-guide/getting-started)
 
 <common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>

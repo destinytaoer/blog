@@ -15,6 +15,7 @@ copyright: true
 Markdown 是一种用来写作的轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）
 
 ### 优点
+
 1. 纯文本，所以兼容性极强，可以用所有文本编辑器打开
 2. 它用简洁的语法代替排版，使我们专心于码字
 3. 格式转换方便，Markdown 的文本你可以轻松转换为 html、PDF等
@@ -25,12 +26,14 @@ Markdown 是一种用来写作的轻量级标记语言，创始人为约翰·格
 <!-- more -->
 
 ### 编辑器
-1. [sublime text](https://www.sublimetext.com/)(本人从事前端开发最喜欢用的一个编辑器，轻量级，但是非常强大)、Mac的mou、Markdownpad等
+
+1. [sublime text](https://www.sublimetext.com/)、VSCode 等 IDE
 2. 很多网站也支持了 Markdown 的文字录入，如[简书](https://www.jianshu.com "https://www.jianshu.com")
-3. 在线编辑器，推荐[StackEdit](https://stackedit.io/editor "https://stackedit.io/editor")
+3. 其他功能强大的笔记软件：马克飞象、小书匠、有道云等，推荐前两个
 
 ## 二、 markdown语法
-这里只是简单介绍markdown经常用到的语法标记，也只是个人觉得最简单实用、能够快速入门，如果您想深入学习、了解更多的markdown功能，请点击下面的文档：
+
+这里只是简单介绍 markdown 经常用到的语法标记，也只是个人觉得最简单实用、能够快速入门，如果您想深入学习、了解更多的 markdown 功能，请点击下面的文档：
 
 >[Markdown 语法说明 (简体中文版)](https://github.com/riku/Markdown-Syntax-CN/blob/master/syntax.md "https://github.com/riku/Markdown-Syntax-CN/blob/master/syntax.md")
 
@@ -86,6 +89,7 @@ Markdown 是一种用来写作的轻量级标记语言，创始人为约翰·格
 * Blue
 
 #### 2.有序列表
+
 使用数字、一个英文句号和一个空格即可。
 
 ```
@@ -100,7 +104,7 @@ Markdown 是一种用来写作的轻量级标记语言，创始人为约翰·格
 
 ## 链接
 
-在方括号写下链接文字，圆括号写下网址即可。也可以在右边加上空格，再用引号加上title属性。（这个title属性可能有些人不知道，就是鼠标移动到链接上会显示的文本）
+在方括号写下链接文字，圆括号写下网址即可。也可以在右边加上空格，再用引号加上 title 属性。（这个 title 属性可能有些人不知道，就是鼠标移动到链接上会显示的文本）
 
 ```
 [好中文的样子](https://www.jianshu.com/p/d409bb2b5d6c "https://www.jianshu.com/p/d409bb2b5d6c")

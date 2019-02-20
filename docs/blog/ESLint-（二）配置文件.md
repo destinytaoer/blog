@@ -182,7 +182,8 @@ module.exports = {
 ```
 
 ## 参考
->[ESLint （一）简介与安装](https://destinytaoer.cn/posts/4e5d3138/)
-[配置ESLint](https://eslint.org/docs/user-guide/configuring)
+
+- [ESLint （一）简介与安装](https://destinytaoer.cn/posts/4e5d3138/)
+- [配置ESLint](https://eslint.org/docs/user-guide/configuring)
 
 <common-Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</common-Quote>
