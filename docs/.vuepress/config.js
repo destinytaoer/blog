@@ -8,7 +8,7 @@ module.exports = {
   ],
   // 主题配置
   themeConfig: {
-    logo: '/logo.jpg',
+    logo: '/logo.png',
     pageSize: 5,
     // 顶部导航
     nav: [

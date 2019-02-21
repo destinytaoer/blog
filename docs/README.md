@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.jpg
+heroImage: /bg.jpg
 heroText: destiny'Note
 tagline: best for the best!
 actionText: 前往个人博客
