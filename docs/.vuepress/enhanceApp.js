@@ -3,7 +3,7 @@ const dataMixin = {
   computed: {
     $posts () {
       const pages = this.$site.pages
-      const pageFilter = p => p.frontmatter.layout === 'post'
+      const pageFilter = p => p.type === 'post'
       const pageSort = (p1, p2) => {
         let dateA = new Date(p1.createdAt).getTime()
         let dateB = new Date(p2.createdAt).getTime()
@@ -18,27 +18,8 @@ const dataMixin = {
         return p
       }
       const posts = pages.filter(pageFilter).map(pageMap).sort(pageSort)
-      console.log(posts);
       return posts
-    },
-
-    $categories () {
-      let categoriesSet = new Set()
-      for (const post of this.$posts) {
-        if (post.category) {
-          categoriesSet.add(post.category)
-        }
-      }
-      return Array.from(categoriesSet)
-    },
-
-    $tags () {
-      let tagsArr = []
-      for (const post of this.$posts) {
-        tagsArr = tagsArr.concat(post.tags)
-      }
-      return Array.from(new Set(tagsArr))
-    },
+    }
   }
 }
 
@@ -49,5 +30,6 @@ export default ({
   siteData // 站点元数据
 }) => {
   Vue.mixin(dataMixin)
+  console.log(siteData);
   // ...做一些其他的应用级别的优化
 }

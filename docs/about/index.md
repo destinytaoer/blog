@@ -2,27 +2,26 @@
 title: 关于我
 date: 2017-09-20 10:32:40
 update: 2018-08-01 10:32:40
-# layout: About
 comments: true
 ---
+
 ## 个人简介
 
-- 作者: destiny
-- 院校: SZU
-- 家乡: 广东梅州
+- 博主: destiny
+- 院校: [深圳大学](https://baike.baidu.com/item/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6)
 - 所在地: 广东深圳
-- 标签: 退伍军人，前端工程师，程序员
+- 标签: 退伍军人、前端工程师、程序员
 - 描述: 专注前端学习与开发，热衷分享好文
 - 联系方式:
+  - Email：1848765519@qq.com
   - WeChat：17665494943 
-  - QQ：1848765519
-  - GitHub：destinytaoer
+  - GitHub：https://github.com/destinytaoer
 
 > **[博文前言](/blog/hello-world.html)**
 
 ## 共勉
 
-<common-Quote>
+<Quote>
 <p>《热爱生命》</p>
 <p>汪国真</p>
 <p>我不去想是否能够成功</p>
@@ -37,4 +36,4 @@ comments: true
 <p>我不去想未来是平坦还是泥泞</p>
 <p>只要热爱生命</p>
 <p>一切，都在意料之中</p>
-</common-Quote>
+</Quote>

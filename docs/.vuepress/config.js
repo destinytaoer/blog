@@ -8,7 +8,7 @@ module.exports = {
   ],
   // 主题配置
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.jpg',
     pageSize: 5,
     // 顶部导航
     nav: [
@@ -35,8 +35,8 @@ module.exports = {
 
     // // 假如你的文档仓库和项目本身不在一个仓库：
     // docsRepo: 'vuejs/vuepress',
-    // 假如文档不是放在仓库的根目录下：
-    docsDir: 'docs',
+    // // 假如文档不是放在仓库的根目录下：
+    // docsDir: 'docs',
     // // 假如文档放在一个特定的分支下：
     // docsBranch: 'master',
     // 默认是 false, 设置为 true 来启用
@@ -53,12 +53,58 @@ module.exports = {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
     }
   },
-  ga: 'UA-134526816-1',
-  // 内容更新的刷新提示
-  serviceWorker: true,
-  updatePopup: {
-    message: '有内容更新',
-    buttonText: '刷新'
+  plugins: {
+    // 内容更新的刷新提示
+    '@vuepress/pwa': {
+      serviceWorker: true,
+      updatePopup: {
+        message: '有内容更新',
+        buttonText: '刷新'
+      }
+    },
+    // 博客配置
+    '@vuepress/blog': {
+      postsDir: '_posts',
+      categoryIndexPageUrl: '/categories/',
+      tagIndexPageUrl: '/tags/',
+      permalink: '/:year/:month/:slug'
+    },
+    // 博客分页
+    '@vuepress/pagination': {
+      postsFilter: (({ type }) => type === 'post'),
+      postsSorter: ((prev, next) => {
+        const prevTime = new Date(prev.frontmatter.date).getTime()
+        const nextTime = new Date(next.frontmatter.date).getTime()
+        return prevTime - nextTime > 0 ? -1 : 1
+      }),
+      layout: 'blog',
+      paginationDir: 'blog/page',
+      perPagePosts: 5,
+      firstPagePath:'/blog/'
+    },
+    '@vuepress/google-analytics':{
+      ga: 'UA-134526816-1'
+    },
+    // 图片的放大
+    '@vuepress/medium-zoom': {
+      selector: '.content img'
+    },
+    // 回到顶部
+    '@vuepress/back-to-top': {
+
+    },
+    // 全局注册组件
+    '@vuepress/register-components': {
+      componentsDir: [],
+      components: [
+        // {
+        //   name: 'V-Card',
+        //   path: 'path/to/card.vue'
+        // }
+      ]
+    }
   },
-  popupComponent: undefined
+  markdown: {
+    
+  }
 }
