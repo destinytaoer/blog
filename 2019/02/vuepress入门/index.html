@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress 入门 | destiny&#39;Note</title>
+    <meta name="description" content="生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.a431a862.css" as="style"><link rel="preload" href="/assets/js/app.9e7bcb87.js" as="script"><link rel="preload" href="/assets/js/3.0473b08a.js" as="script"><link rel="preload" href="/assets/js/1.4364c04d.js" as="script"><link rel="preload" href="/assets/js/33.4458a351.js" as="script"><link rel="preload" href="/assets/js/5.ea4bb791.js" as="script"><link rel="preload" href="/assets/js/11.0d3c9b8f.js" as="script"><link rel="prefetch" href="/assets/js/10.96e0e838.js"><link rel="prefetch" href="/assets/js/12.7d36f75f.js"><link rel="prefetch" href="/assets/js/13.3a4269e6.js"><link rel="prefetch" href="/assets/js/14.b7f82154.js"><link rel="prefetch" href="/assets/js/15.3aa195fe.js"><link rel="prefetch" href="/assets/js/16.b11dfb63.js"><link rel="prefetch" href="/assets/js/17.6f5e71a1.js"><link rel="prefetch" href="/assets/js/18.c2910d6a.js"><link rel="prefetch" href="/assets/js/19.b9b5d134.js"><link rel="prefetch" href="/assets/js/20.9400e8f8.js"><link rel="prefetch" href="/assets/js/21.c1cc4c43.js"><link rel="prefetch" href="/assets/js/22.0e458ada.js"><link rel="prefetch" href="/assets/js/23.b692763b.js"><link rel="prefetch" href="/assets/js/24.21a63909.js"><link rel="prefetch" href="/assets/js/25.e66d6f96.js"><link rel="prefetch" href="/assets/js/26.bc73bb89.js"><link rel="prefetch" href="/assets/js/27.8dea746d.js"><link rel="prefetch" href="/assets/js/28.bd02265e.js"><link rel="prefetch" href="/assets/js/29.cd428af3.js"><link rel="prefetch" href="/assets/js/30.404cbff1.js"><link rel="prefetch" href="/assets/js/31.80956ab8.js"><link rel="prefetch" href="/assets/js/32.3d4ae08f.js"><link rel="prefetch" href="/assets/js/34.3bd0f373.js"><link rel="prefetch" href="/assets/js/35.30374dc7.js"><link rel="prefetch" href="/assets/js/36.9ecef18b.js"><link rel="prefetch" href="/assets/js/37.73705cb4.js"><link rel="prefetch" href="/assets/js/38.a4861604.js"><link rel="prefetch" href="/assets/js/39.01643722.js"><link rel="prefetch" href="/assets/js/4.6d6b9edc.js"><link rel="prefetch" href="/assets/js/40.854b9729.js"><link rel="prefetch" href="/assets/js/41.be21f1ae.js"><link rel="prefetch" href="/assets/js/42.7f38503b.js"><link rel="prefetch" href="/assets/js/43.7b725091.js"><link rel="prefetch" href="/assets/js/44.f851142e.js"><link rel="prefetch" href="/assets/js/45.7de861a6.js"><link rel="prefetch" href="/assets/js/46.27ce1f6f.js"><link rel="prefetch" href="/assets/js/47.5e6c4d1a.js"><link rel="prefetch" href="/assets/js/48.0c5fc40f.js"><link rel="prefetch" href="/assets/js/49.7c6e2ba8.js"><link rel="prefetch" href="/assets/js/50.fe769584.js"><link rel="prefetch" href="/assets/js/51.9bf9e9b9.js"><link rel="prefetch" href="/assets/js/52.56878768.js"><link rel="prefetch" href="/assets/js/53.24f1dcaf.js"><link rel="prefetch" href="/assets/js/54.1dc25f01.js"><link rel="prefetch" href="/assets/js/55.58bc23d4.js"><link rel="prefetch" href="/assets/js/56.ebaa0e54.js"><link rel="prefetch" href="/assets/js/57.0f671646.js"><link rel="prefetch" href="/assets/js/58.934c48fd.js"><link rel="prefetch" href="/assets/js/59.07277e02.js"><link rel="prefetch" href="/assets/js/6.f7d9f97e.js"><link rel="prefetch" href="/assets/js/60.d14889f1.js"><link rel="prefetch" href="/assets/js/61.25b7c930.js"><link rel="prefetch" href="/assets/js/62.4d4b761a.js"><link rel="prefetch" href="/assets/js/63.c91d8fd7.js"><link rel="prefetch" href="/assets/js/7.9f73f35a.js"><link rel="prefetch" href="/assets/js/8.41bb2148.js"><link rel="prefetch" href="/assets/js/9.f3f37f6e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a431a862.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="destiny'Note" class="logo"> <span class="site-name can-hide">destiny'Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">博客</a></div><div class="nav-item"><a href="/visualization/" class="nav-link">数据可视化</a></div><div class="nav-item"><a href="https://www.yuque.com/destinytaoer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <a href="https://github.com/destinytaoer/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">博客</a></div><div class="nav-item"><a href="/visualization/" class="nav-link">数据可视化</a></div><div class="nav-item"><a href="https://www.yuque.com/destinytaoer/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  语雀
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about/" class="nav-link">关于我</a></div> <a href="https://github.com/destinytaoer/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VuePress 入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#_1-初始化" class="sidebar-link">1. 初始化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#结构目录" class="sidebar-link">结构目录</a></li></ul></li><li><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#_2-配置-config-js-文件" class="sidebar-link">2. 配置 config.js 文件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#基础配置" class="sidebar-link">基础配置</a></li><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#主题配置" class="sidebar-link">主题配置</a></li></ul></li><li><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#_3-首页" class="sidebar-link">3. 首页</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#_4-开发和部署" class="sidebar-link">4. 开发和部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#定义脚本" class="sidebar-link">定义脚本</a></li><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#部署到-github-pages-上" class="sidebar-link">部署到 GitHub Pages 上</a></li><li class="sidebar-sub-header"><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#自动化部署" class="sidebar-link">自动化部署</a></li></ul></li><li><a href="/2019/02/vuepress%E5%85%A5%E9%97%A8/#_5-后续" class="sidebar-link">5. 后续</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="custom-layout"><main class="post"> <div class="content default"><p>VuePress 是一款使用 Vue 驱动的静态网站生成器，是 Vue 的作者 Evan You 为了方便文档的编写而开发的。</p> <ul><li>默认主题与 Vue 官方文档一致</li> <li>简洁，少配置，高性能</li> <li>Markdown 专为技术文档提供拓展</li> <li>自带 PWA</li> <li>自定义主题，可定制程度完全由自己决定</li></ul> <blockquote><p>官方文档：由于 1.x 还处于测试阶段，可能随时变更，所以建议选用 0.x 版本</p> <ul><li><a href="https://v0.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">0.x 版本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">1.x 版本<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></blockquote> <h2 id="_1-初始化"><a href="#_1-初始化" aria-hidden="true" class="header-anchor">#</a> 1. 初始化</h2> <h3 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h3> <p>首先需要安装 vuepress</p> <p>可以使用全局安装：（选一个版本安装即可，使用 yarn 或 npm 都可以）</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yarn add global vuepress <span class="token comment"># 0.x 版本</span>
+yarn add global vuepress@next <span class="token comment"># 1.x 版本</span>
+</code></pre></div><p>也可以使用局部安装，在你的项目根目录下：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yarn add -D vuepress
+yarn add -D vuepress@next
+</code></pre></div><div class="danger custom-block"><p class="custom-block-title">WARNING</p> <p>注意有一个坑，我遇到过，安装 vuepress@next 以及其他插件时，默认会安装 alpha 0 版本，需要修改 package.json 文件，更改版本号，再重新使用 yarn 安装一下。</p> <p>另外，全局安装与局部安装在后面的部署命令中会有些差别。</p></div> <h3 id="结构目录"><a href="#结构目录" aria-hidden="true" class="header-anchor">#</a> 结构目录</h3> <div class="language- extra-class"><pre class="language-text"><code>.
+├── docs
+│   ├── .vuepress
+│   │   ├── public
+│   │   └── config.js
+│   │ 
+│   └── README.md
+│ 
+└── package.json
+</code></pre></div><p>可详细查看：<a href="https://vuepress.vuejs.org/zh/guide/directory-structure.html" target="_blank" rel="noopener noreferrer">目录结构<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_2-配置-config-js-文件"><a href="#_2-配置-config-js-文件" aria-hidden="true" class="header-anchor">#</a> 2. 配置 config.js 文件</h2> <h3 id="基础配置"><a href="#基础配置" aria-hidden="true" class="header-anchor">#</a> 基础配置</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">&quot;destiny'Note&quot;</span><span class="token punctuation">,</span>
+  description<span class="token punctuation">:</span> <span class="token string">&quot;生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。&quot;</span><span class="token punctuation">,</span>
+  base<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token comment">// 项目根路径</span>
+  dest<span class="token punctuation">:</span> <span class="token string">'/dist/'</span><span class="token punctuation">,</span> <span class="token comment">// 打包后的文件夹路径，为了方便，我把 dist 文件夹放到了根目录上</span>
+  <span class="token comment">// head 标签中的额外内容</span>
+  head<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token punctuation">:</span> <span class="token string">'/favicon.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token comment">// 这个是标签页 logo</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 语言配置</span>
+  locales<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 键名是该语言所属的子路径</span>
+    <span class="token comment">// 作为特例，默认语言可以使用 '/' 作为其路径。</span>
+    <span class="token string">'/'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      lang<span class="token punctuation">:</span> <span class="token string">'zh-CN'</span><span class="token punctuation">,</span> <span class="token comment">// 将会被设置为 &lt;html&gt; 的 lang 属性</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可详细查看：<a href="https://vuepress.vuejs.org/zh/config/#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener noreferrer">配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="主题配置"><a href="#主题配置" aria-hidden="true" class="header-anchor">#</a> 主题配置</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token comment">// 主题配置</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 顶部导航</span>
+    nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'归档'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/archives/'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'分类'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/categories/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'标签'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/tags/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'关于我'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/about/'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// 侧边栏</span>
+    sidebar<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'/'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sidebarDepth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 默认 1 提取到 h2，0 为禁用，2 为 h2，h3</span>
+    displayAllHeaders<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 默认值：false 侧边栏只会显示由当前活动页面的标题组成的链接</span>
+    activeHeaderLinks<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 默认值：true 滚动时通过 hash 高亮侧边栏标题</span>
+
+    <span class="token comment">// Git 仓库和编辑链接</span>
+    repo<span class="token punctuation">:</span> <span class="token string">'username/repo'</span><span class="token punctuation">,</span> <span class="token comment">// 你的仓库</span>
+    repoLabel<span class="token punctuation">:</span> <span class="token string">'GitHub'</span><span class="token punctuation">,</span> <span class="token comment">// 导航栏上的文本</span>
+
+    editLinks<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 默认为 &quot;Edit this page&quot;</span>
+    editLinkText<span class="token punctuation">:</span> <span class="token string">'编辑此页面'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可详细查看：<a href="https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E9%A6%96%E9%A1%B5" target="_blank" rel="noopener noreferrer">默认主题配置<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="_3-首页"><a href="#_3-首页" aria-hidden="true" class="header-anchor">#</a> 3. 首页</h2> <p>配置 docs 下的 README.md 文件即可：</p> <div class="language-markdown extra-class"><pre class="language-markdown"><code><span class="token hr punctuation">---</span>
+home: true
+heroImage: /hero.jpg
+heroText: Hero
+tagline: Hero 副标题
+actionText: 快速上手 →
+actionLink: /zh/guide/
+features:
+<span class="token list punctuation">-</span> title: 简洁至上
+  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+<span class="token list punctuation">-</span> title: Vue驱动
+  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+<span class="token list punctuation">-</span> title: 高性能
+  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+<span class="token title important">footer: MIT Licensed | Copyright © 2018-present Evan You
+<span class="token punctuation">---</span></span>
+</code></pre></div><p>首页必须设置 home 为 true。默认样式与官方文档首页一致。</p> <h2 id="_4-开发和部署"><a href="#_4-开发和部署" aria-hidden="true" class="header-anchor">#</a> 4. 开发和部署</h2> <h3 id="定义脚本"><a href="#定义脚本" aria-hidden="true" class="header-anchor">#</a> 定义脚本</h3> <p>初始化 package.json，如果是局部安装的话，这个文件已经存在，不需要执行这个命令</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yarn init
+</code></pre></div><p>编辑 package.json 文件，添加如下脚本：（这里需要注意）</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  ...
+  // 全局安装
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+  // 局部安装
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npx vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npx vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>个人不喜欢官方的写法，就把名称写的简洁一些。</strong></p> <p>运行脚本命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yarn dev <span class="token comment"># 开发</span>
+yarn build <span class="token comment"># 打包</span>
+</code></pre></div><h3 id="部署到-github-pages-上"><a href="#部署到-github-pages-上" aria-hidden="true" class="header-anchor">#</a> 部署到 GitHub Pages 上</h3> <p>部署到 GitHub 上，首先要在 GitHub 上建立仓库，这里省略。</p> <p>然后再本地初始化仓库，并关联远程仓库</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> init
+<span class="token function">git</span> remote add origin <span class="token operator">&lt;</span>repo<span class="token operator">&gt;</span> <span class="token comment"># 你的远程仓库</span>
+</code></pre></div><p>打包之后把整个项目上传到 master 分支上，方便管理</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> add -A
+<span class="token function">git</span> commit -m <span class="token string">'init blog'</span>
+<span class="token comment"># 首次提交需要 --set-upstream，后续可以去掉</span>
+<span class="token function">git</span> push --set-upstream origin master <span class="token comment"># 所有代码推送到远程仓库的 master 分支上</span>
+</code></pre></div><p>单独将打包好的文件上传到 gh-pages 分支上，自动会生成 GitHub Pages，在仓库设置里可以查看到相应地址。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> subtree push --prefix dist origin gh-pages <span class="token comment"># 只将 dist 上传到 gh-pages 分支</span>
+</code></pre></div><p>注意，最好配置一个 .gitignore 文件，去掉不需要上传的文件和文件夹。</p> <h3 id="自动化部署"><a href="#自动化部署" aria-hidden="true" class="header-anchor">#</a> 自动化部署</h3> <p>每一次更新完文章之后，都需要敲一大串代码，才能重新部署，显得很繁琐。那么我们来让这些命令合并成一个命令吧。</p> <p>项目根目录下创建 deploy.sh 文件：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token keyword">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+yarn build
+
+<span class="token comment"># 提交到历史区，$1 为运行 sh 时的第一个参数</span>
+<span class="token function">git</span> add -A
+<span class="token function">git</span> commit -m <span class="token variable">$1</span>
+
+<span class="token comment"># 提交到 master 分支</span>
+<span class="token function">git</span> push origin master
+
+<span class="token comment"># 将 dist 文件提交到 gh-pages 分支</span>
+<span class="token function">git</span> subtree push --prefix dist origin gh-pages
+
+<span class="token comment"># 退出命令</span>
+<span class="token keyword">exit</span> 0
+</code></pre></div><p>然后在 package.json 文件中配置脚本：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    //...
+    <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>后续部署直接使用命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>yarn deploy <span class="token string">&quot;updatedBlog&quot;</span>
+</code></pre></div><p>需要注意的是，后面带的消息，不能使用空格隔开（本人对 shell 脚本不熟悉，查找了也没明白，希望有大神指点一下），使用了空格，就会导致只提交了空格前的消息</p> <p>另外，这个命令需要在 git bash 中使用，不能在 Windows 的命令行中使用。</p> <h2 id="_5-后续"><a href="#_5-后续" aria-hidden="true" class="header-anchor">#</a> 5. 后续</h2> <p>太喜欢 VuePress 了，因为后面都托管给 Vue 了，所以速度飞快。</p> <p>后续会出一个如何修改默认主题的文章。</p> <div class="quote"><main class="text">生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</main></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/destinytaoer/blog/edit/master/2019/02/vuepress入门/README.md" target="_blank" rel="noopener noreferrer">编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新时间: </span> <span class="time">2019-02-21 08:12:00</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/2019/02/chrome%E6%8F%92%E4%BB%B6%E8%8B%B1%E9%9B%84%E6%A6%9C/" class="prev">
+          Chrome 插件英雄榜
+        </a></span> <span class="next"><a href="/2018/12/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%9C%A8%E5%93%AA%E9%87%8C/">
+          前端工程师的未来在哪里？
+        </a>
+        →
+      </span></p></div> </main></div> <footer class="footer post-footer"><p>© 2016-2019 <i class="icon icon-love"></i> destiny</p> <span><i class="icon icon-myself"><span id="busuanzi_container_site_uv" style="display:none">
+        访问用户：<span id="busuanzi_value_site_uv"></span></span>人</i> <i class="icon icon-eye"><span id="busuanzi_container_site_pv" style="display:none">
+        访问次数：<span id="busuanzi_value_site_pv"></span></span>次
+    </i></span></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.9e7bcb87.js" defer></script><script src="/assets/js/3.0473b08a.js" defer></script><script src="/assets/js/1.4364c04d.js" defer></script><script src="/assets/js/33.4458a351.js" defer></script><script src="/assets/js/5.ea4bb791.js" defer></script><script src="/assets/js/11.0d3c9b8f.js" defer></script>
+  </body>
+</html>
