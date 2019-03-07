@@ -1,6 +1,7 @@
 ---
 title: 书单
-date: 2019-02-27 21
+date: 2019-02-27 21:41
+update: 2019-03-07 22:42
 layout: book
 comments: false
 readLists:
@@ -20,11 +21,17 @@ wishLists:
 - title: JavaScript 函数式编程
   img: 
   link: 
-- title: JavaScript 面向对象编程指南
+- title: 数据可视化
+  img: 
+  link: 
+- title: 图形语法
+  img: 
+  link: 
+- title: 计算机图形学几何工具算法详解
   img: 
   link: 
 - title: JavaScript设计模式与开发实践
-  img:
+  img: 
   link: http://book.51cto.com/art/201505/475144.htm
 - title: JavaScript 设计模式
   img: 
