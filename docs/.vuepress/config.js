@@ -108,9 +108,6 @@ module.exports = {
       repo: 'blog_comment',
       clientId: 'f8354046872a5c2e8a71',
       clientSecret: 'f968e4152c4fcb5d79a524e8996377446525e97c',
-
-      autoCreateIssue: false,
-      
     }
   },
   markdown: {
