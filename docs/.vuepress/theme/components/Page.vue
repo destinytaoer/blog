@@ -58,9 +58,9 @@
     </div>
 
     <Vssue v-if="$page.frontmatter.comments"
-      :title="$page.title"
+      :title="$page.frontmatter.title"
       :options="{
-        labels: ['Vssue', $page.title]
+        labels: ['Vssue', $page.frontmatter.title]
       }"
     />
 
