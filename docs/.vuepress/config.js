@@ -14,6 +14,22 @@ module.exports = {
     nav: [
       { text: '博客', link: '/blog/' },
       { text: '数据可视化', link: '/visualization/'},
+      {
+        text: '前端手册',
+        items: [
+          { text: 'JavaScript', link: '/frontend/js' },
+          { text: 'CSS', link: '/frontend/css' },
+          {
+            text: '其他',
+            items: [
+              { text: 'Vue', link: '/frontend/vue' },
+              { text: 'React', link: '/frontend/react' },
+              { text: 'TypeScript', link: '/frontend/ts' },
+              { text: 'Node', link: '/frontend/node' }
+            ]
+          }
+        ]
+      },
       { text: '语雀', link: 'https://www.yuque.com/destinytaoer/'},
       { text: '关于我', link: '/about/' }
     ],
