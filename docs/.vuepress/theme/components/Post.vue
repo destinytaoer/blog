@@ -57,6 +57,8 @@
       </p>
     </div>
 
+    <Vssue v-if="$page.frontmatter.comments" />
+
     <slot name="bottom"/>
   </main>
 </template>
