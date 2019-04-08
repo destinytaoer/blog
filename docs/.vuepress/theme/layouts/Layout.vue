@@ -51,6 +51,7 @@
     </Page>
 
     <Footer :hasSideBar="shouldShowSidebar"></Footer>
+    <BackToTop></BackToTop>
   </div>
 </template>
 
@@ -62,10 +63,11 @@ import Post from '../components/Post.vue'
 import Blog from '../components/Blog.vue'
 import Sidebar from '../components/Sidebar.vue'
 import Footer from '../components/Footer.vue'
+import BackToTop from '../components/BackToTop.vue'
 import { resolveSidebarItems } from '../util'
 
 export default {
-  components: { Home, Page, Post, Blog, Sidebar, Navbar, Footer },
+  components: { Home, Page, Post, Blog, Sidebar, Navbar, Footer, BackToTop },
 
   data () {
     return {

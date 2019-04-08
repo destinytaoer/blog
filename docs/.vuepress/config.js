@@ -36,7 +36,7 @@ module.exports = {
     // // 假如你的文档仓库和项目本身不在一个仓库：
     // docsRepo: 'vuejs/vuepress',
     // // 假如文档不是放在仓库的根目录下：
-    // docsDir: 'docs',
+    docsDir: 'docs',
     // // 假如文档放在一个特定的分支下：
     // docsBranch: 'master',
     // 默认是 false, 设置为 true 来启用
@@ -89,10 +89,6 @@ module.exports = {
     '@vuepress/medium-zoom': {
       selector: '.content img'
     },
-    // 回到顶部
-    '@vuepress/back-to-top': {
-
-    },
     // 全局注册组件
     '@vuepress/register-components': {
       componentsDir: [],
@@ -102,6 +98,16 @@ module.exports = {
         //   path: 'path/to/card.vue'
         // }
       ]
+    },
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github',
+
+      // 其他的 Vssue 配置
+      owner: 'destinytaoer',
+      repo: 'blog_comment',
+      clientId: 'f8354046872a5c2e8a71',
+      clientSecret: 'f968e4152c4fcb5d79a524e8996377446525e97c',
     }
   },
   markdown: {

@@ -51,12 +51,18 @@ hello，大家好。创建之初，希望大家能够从我这里学到知识，
 ## 第一次博客改版（2018.08）
 
 - 主题：tomotoes
-- abbrlink：用于生成页面的唯一码，有利于 SEO 优化
+- abbrlink 用于生成页面的唯一码
 - valine 评论
 - jsonContent 搜索
 - 不蒜子访问量统计
 - leanclound 阅读量统计
 - wordcount 字数统计
 - 站点地图
+
+----
+## 第二次博客改版（2019.02）
+
+- 从原来的 hexo 改为 vuepress
+- 不蒜子访问量统计
 
 <Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</Quote>

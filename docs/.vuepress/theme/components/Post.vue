@@ -120,11 +120,10 @@ export default {
       } = this.$site.themeConfig
 
       let path = normalize(this.$page.path)
-      if (endingSlashRE.test(path)) {
-        path += 'README.md'
-      } else {
-        path += '.md'
-      }
+      
+      let pathArr = path.match(/\/\d{4}\/\d{2}\/(.+)\//);
+
+      path = '/_posts/' + pathArr[1] + '.md'
       if (docsRepo && editLinks) {
         return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path)
       }

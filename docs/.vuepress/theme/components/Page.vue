@@ -57,6 +57,8 @@
       </p>
     </div>
 
+    <Vssue v-if="$page.frontmatter.comments" />
+
     <slot name="bottom"/>
   </main>
 </template>
@@ -111,7 +113,7 @@ export default {
       const {
         repo,
         editLinks,
-        docsDir = '',
+        docsDir = 'docs',
         docsBranch = 'master',
         docsRepo = repo
       } = this.$site.themeConfig

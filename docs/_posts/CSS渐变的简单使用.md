@@ -26,10 +26,7 @@ copyright: true
 
 ![](http://upload-images.jianshu.io/upload_images/7295449-cadb5b434c9fc216.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
-
 渐变可以应用于任何使用背景图片的地方。这意味着在CSS样式中，渐变相当于背景图片，在理论上可在任何使用url() 值的地方采用，比如最常见的background-image、list-style-type以及前面介绍的CSS3的图像边框属性border-image。但直到目前为止，仅在背景图片中得到最完美的支持。
-
 
 # 二、线性渐变
 
@@ -37,6 +34,7 @@ copyright: true
 
 ## 1. 基础语法
 最新的浏览器都已经支持标准写法
+
 ``` css
 -webkit-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*)  //webkit引擎Chrome
 -moz-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*) //Gecko引擎Firefox
@@ -44,6 +42,7 @@ copyright: true
 -ms-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*) //Trident引擎IE
 linear-gradient([[<angle> | to <side-or-corner> ],]?<color-stop>[,<color-stop>]+)//w3c标准
 ```
+
 其中，point指向、angle角度代表方向，stop、color-stop代表各个颜色。
 
 **关键字写法**：
@@ -79,6 +78,7 @@ left top、left bottom、right top、right bottom等组合只对标准有效
 **多色渐变**：
 
 在第二与第三个参数之间，即起点颜色与终点颜色之间，添加多个颜色参数
+
 ```css
 background-image: -webkit-linear-gradient(left,blue,red,white);
 background-image: -moz-linear-gradient(left,blue,red,white);
@@ -91,24 +91,29 @@ background-image: linear-gradient(to right,blue,red,white);
 
 ### 语法
 只需在你定义的颜色后面加上空格，再加上长度，如百分比、px等。
+
 ```css
 background-image: linear-gradient(270deg,blue 0%,red 14%,green 100%);
 ```
+
 效果如下：
 ![](http://upload-images.jianshu.io/upload_images/7295449-c93a2919706b74aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 0%到14%是蓝到红的渐变，14%到100%是红到绿的渐变。
 
->**注意**：如果定义的长度没有占满整个宽度或高度，那么起点或终点位置的空缺会由最近的颜色的**纯色**填满。
+> **注意**：如果定义的长度没有占满整个宽度或高度，那么起点或终点位置的空缺会由最近的颜色的**纯色**填满。
 
 如：
+
 ```css
 background-image: linear-gradient(270deg,blue 10%,red 14%,green 80%);
 ```
+
 效果如下：
 
 ![](http://upload-images.jianshu.io/upload_images/7295449-ad889ea87b2bcb13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 3. 特殊思考
+
 颜色点被称为色标。
 - 如果两个色标颜色是一样的，那么，就不会发生渐变，而是纯色。
 - 如果两个不同颜色的点，不断接近，直至重叠，渐变也就逐渐消失了。
@@ -147,8 +152,8 @@ radial-gradient([[<shape> || <size>] [at <position>]?,| at <position>,]?<color-s
 
 ### 参数
 - **position**
-  <length>：用长度值指定径向渐变圆心的横坐标或纵坐标。可以为负值。
-  <percentage>：用百分比指定径向渐变圆心的横坐标或纵坐标。可以为负值。
+  length：用长度值指定径向渐变圆心的横坐标或纵坐标。可以为负值。
+  percentage：用百分比指定径向渐变圆心的横坐标或纵坐标。可以为负值。
   left：设置左边为径向渐变圆心的横坐标值。
   center：设置中间为径向渐变圆心的横坐标值或纵坐标。
   right：设置右边为径向渐变圆心的横坐标值。
@@ -157,40 +162,44 @@ radial-gradient([[<shape> || <size>] [at <position>]?,| at <position>,]?<color-s
 
 - **shape**
   没有默认值，会根据容器选择。
-  circle：如果<size>和<length>大小相等，那么径向渐变是一个圆形，也就是用来指定圆形的径向渐变。
-  ellipse：如果<size>和<length>大小不相等，那么径向渐变是一个椭圆形，也就是用来指定椭圆形的径向渐变。
+  circle：如果 size 和 length 大小相等，那么径向渐变是一个圆形，也就是用来指定圆形的径向渐变。
+  ellipse：如果 size 和 length 大小不相等，那么径向渐变是一个椭圆形，也就是用来指定椭圆形的径向渐变。
 
 - **size**
   closest-side：指定径向渐变的半径长度为从圆心到离圆心最近的边；
   closest-corner：指定径向渐变的半径长度为从圆心到离圆心最近的角；
   farthest-side：指定径向渐变的半径长度为从圆心到离圆心最远的边；
   farthest-corner：指定径向渐变的半径长度为从圆心到离圆心最远的角；默认值
-  <length>：指定圆的直径或椭圆的水平和垂直直径。
+  length：指定圆的直径或椭圆的水平和垂直直径。
 
 ### 用法
 
 - **最简单**
 标准写法与加前缀一样
 ```css
-  background-image: radial-gradient(red,blue);
+background-image: radial-gradient(red,blue);
 ```
 **注意**：此时形状会根据你的容器来选择圆形或者椭圆。
 
 - **加上形状**
 标准写法与加前缀一样
+
 ```css
-  background-image: radial-gradient(circle,red,blue);//圆形
-  background-image: radial-gradient(ellipse,red,blue);//椭圆
+background-image: radial-gradient(circle,red,blue);//圆形
+background-image: radial-gradient(ellipse,red,blue);//椭圆
 ```
+
 **注意**：只加形状的话，在**正方形容器**中都会显示为圆形
 
 - **加上大小**
 加前缀写法测试无法添加长度或百分比大小，会与position设置位置的方式冲突，只能添加关键字。
 下面以标准写法为例，大小可以使用长度，百分比，关键字。
+
 ```css
-  background-image: radial-gradient(20px,red,blue);
-  background-image: radial-gradient(20px 50px,red,blue);
+background-image: radial-gradient(20px,red,blue);
+background-image: radial-gradient(20px 50px,red,blue);
 ```
+
 一个值表示圆形直径，两个值表示水平和垂直直径。
 
 **注意**：这时，添加关键字circle和ellipse的话，在大小的前面后面是一样的，但是必须以空格形式，如`ellipse 20px 50px`，且circle对应一个值和ellipse两个值，不然会出错。个人认为没必要添加。
@@ -198,8 +207,8 @@ radial-gradient([[<shape> || <size>] [at <position>]?,| at <position>,]?<color-s
 - **加上方向**
 标准写法与加前缀写法有所差别，方向可以使用长度，百分比，关键字。
 ```css
-  background-image:-webkit-radial-gradient(20px 20px,red,blue);
-  background-image: radial-gradient(20px at 20px 20px,red,blue);
+background-image:-webkit-radial-gradient(20px 20px,red,blue);
+background-image: radial-gradient(20px at 20px 20px,red,blue);
 ```
 **注意**：加前缀写法的形状要写在方向的后面，如：`20px 20px,circle`，以逗号隔开。标准写法的形状大小写在方向的前面，如：`ellipse 20px 50px at 20px 20px`，以空格隔开。
 
@@ -207,6 +216,7 @@ radial-gradient([[<shape> || <size>] [at <position>]?,| at <position>,]?<color-s
 
 - **多色渐变**
 标准写法与加前缀写法一样
+
 ```css
   background-image: radial-gradient(circle,red,blue,yellow,orange,green);
 ```

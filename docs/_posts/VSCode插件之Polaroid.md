@@ -12,7 +12,7 @@ comments: true
 copyright: true
 ---
 
-![enter description here][1]
+![code](https://i.loli.net/2019/02/18/5c6aa8fbb76a4.jpg)
 
 Polaroid 是一款生成代码图片的 VSCode 插件。
 
@@ -35,5 +35,3 @@ Polaroid 是一款生成代码图片的 VSCode 插件。
 简单易用，高亮样式由编译器的主题一致，非常适合于分享，如朋友圈、博客等。
 
 <Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</Quote>
-
-  [1]: https://i.loli.net/2019/02/18/5c6aa8fbb76a4.jpg "code"

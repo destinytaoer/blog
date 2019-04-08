@@ -10,7 +10,7 @@ comments: true
 copyright: true
 ---
 
-![enter description here][1]
+![](https://i.loli.net/2019/02/20/5c6cc276c6ef5.jpg)
 
 ## 堆栈内存的作用
 
@@ -139,7 +139,5 @@ f(4); //=>8, i = 3 n = 4，执行 n + (++i) => 4 + 4 = 8
 
 <Quote>生命的意义不仅是活着，而是我们给别人的生命带来了何种不同。</Quote>
 
-
-  [1]: https://i.loli.net/2019/02/20/5c6cc276c6ef5.jpg
   [2]: https://i.loli.net/2019/02/20/5c6cc74903d40.jpg
   [3]: https://i.loli.net/2019/02/20/5c6cc77d64d26.jpg

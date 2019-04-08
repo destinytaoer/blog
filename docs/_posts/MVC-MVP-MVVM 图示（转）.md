@@ -49,7 +49,7 @@ MVC模式的意思是，软件可以分成三个部分。
 
 ![enter description here][4]
 
-三、实例：Backbone
+## 三、实例：Backbone
 
 实际项目往往采用更灵活的方式，以 Backbone.js 为例。
 

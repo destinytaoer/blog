@@ -181,14 +181,14 @@ export default {
     text-decoration none
     padding 6px 15px
     background-color #fff
-    color $fontColor
-    border 2px solid $fontColor
+    color $accentColor
+    border 2px solid $accentColor
     border-radius 6px
     -webkit-transition all 2s ease;
     transition all 0.2s ease
     font-size 15px !important
     &:hover
-      background $fontColor
+      background $accentColor
       color #fff
 
   .article-card .post-footer
