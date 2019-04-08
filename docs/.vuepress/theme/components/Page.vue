@@ -57,7 +57,12 @@
       </p>
     </div>
 
-    <Vssue v-if="$page.frontmatter.comments" />
+    <Vssue v-if="$page.frontmatter.comments"
+      :title="$page.title"
+      :options="{
+        labels: ['Vssue', $page.title]
+      }"
+    />
 
     <slot name="bottom"/>
   </main>
