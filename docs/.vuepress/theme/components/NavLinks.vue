@@ -43,7 +43,7 @@ export default {
 
   computed: {
     userNav () {
-      return this.$themeLocaleConfig.nav || this.$site.themeConfig.nav || []
+      return this.$themeLocaleConfig.nav || this.$themeConfig.nav || []
     },
 
     nav () {
@@ -51,7 +51,7 @@ export default {
       if (locales && Object.keys(locales).length > 1) {
         const currentLink = this.$page.path
         const routes = this.$router.options.routes
-        const themeLocales = this.$site.themeConfig.locales || {}
+        const themeLocales = this.$themeConfig.locales || {}
         const languageDropdown = {
           text: this.$themeLocaleConfig.selectText || 'Languages',
           items: Object.keys(locales).map(path => {
@@ -86,7 +86,7 @@ export default {
     },
 
     repoLink () {
-      const { repo } = this.$site.themeConfig
+      const { repo } = this.$themeConfig
       if (repo) {
         return /^https?:/.test(repo)
           ? repo
@@ -96,8 +96,8 @@ export default {
 
     repoLabel () {
       if (!this.repoLink) return
-      if (this.$site.themeConfig.repoLabel) {
-        return this.$site.themeConfig.repoLabel
+      if (this.$themeConfig.repoLabel) {
+        return this.$themeConfig.repoLabel
       }
 
       const repoHost = this.repoLink.match(/^https?:\/\/[^/]+/)[0]

@@ -57,10 +57,10 @@
       </p>
     </div>
 
-    <Vssue v-if="$page.frontmatter.comments"
-      :title="$page.frontmatter.title"
+    <Vssue v-if="$frontmatter.comments"
+      :title="$frontmatter.title"
       :options="{
-        labels: ['Vssue', $page.frontmatter.title]
+        labels: ['Vssue', $frontmatter.title]
       }"
     />
 
@@ -83,14 +83,14 @@ export default {
       if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
         return this.$themeLocaleConfig.lastUpdated
       }
-      if (typeof this.$site.themeConfig.lastUpdated === 'string') {
-        return this.$site.themeConfig.lastUpdated
+      if (typeof this.$themeConfig.lastUpdated === 'string') {
+        return this.$themeConfig.lastUpdated
       }
       return 'Last Updated'
     },
 
     prev () {
-      const prev = this.$page.frontmatter.prev
+      const prev = this.$frontmatter.prev
       if (prev === false) {
         return
       } else if (prev) {
@@ -101,7 +101,7 @@ export default {
     },
 
     next () {
-      const next = this.$page.frontmatter.next
+      const next = this.$frontmatter.next
       if (next === false) {
         return
       } else if (next) {
@@ -112,7 +112,7 @@ export default {
     },
 
     editLink () {
-      if (this.$page.frontmatter.editLink === false) {
+      if (this.$frontmatter.editLink === false) {
         return
       }
       const {
@@ -121,7 +121,7 @@ export default {
         docsDir = 'docs',
         docsBranch = 'master',
         docsRepo = repo
-      } = this.$site.themeConfig
+      } = this.$themeConfig
 
       let path = normalize(this.$page.path)
       if (endingSlashRE.test(path)) {
@@ -137,7 +137,7 @@ export default {
     editLinkText () {
       return (
         this.$themeLocaleConfig.editLinkText
-        || this.$site.themeConfig.editLinkText
+        || this.$themeConfig.editLinkText
         || `Edit this page`
       )
     }

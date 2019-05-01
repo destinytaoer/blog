@@ -17,8 +17,13 @@ module.exports = {
       {
         text: '前端手册',
         items: [
-          { text: 'JavaScript', link: '/frontend/js' },
-          { text: 'CSS', link: '/frontend/css' },
+          {
+            text: '前端基础',
+            items: [
+              { text: 'JavaScript', link: '/frontend/js' },
+              { text: 'CSS', link: '/frontend/css' },
+            ]
+          },
           {
             text: '其他',
             items: [
@@ -115,7 +120,7 @@ module.exports = {
         // }
       ]
     },
-    '@vssue/vuepress-plugin-vssue': {
+    '@vssue/vssue': {
       // 设置 `platform` 而不是 `api`
       platform: 'github',
 
@@ -124,6 +129,10 @@ module.exports = {
       repo: 'blog_comment',
       clientId: 'f8354046872a5c2e8a71',
       clientSecret: 'f968e4152c4fcb5d79a524e8996377446525e97c',
+    },
+    // 页面滚动时自动激活侧边栏链接
+    '@vuepress/links': {
+      
     }
   },
   markdown: {

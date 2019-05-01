@@ -6,7 +6,16 @@
     <Navbar
       v-if="shouldShowNavbar"
     />
-
+    <h5 class="tag-tip">
+      <i class="icon icon-tag"></i>
+        关于
+      <span style="color:rgb(100, 100, 100)"><%-page.category.trim() %></span>
+      共&nbsp;<%-category_num %>&nbsp;篇文章</h5>
+    <div class="waterfall">
+      <% page.posts.each(function(post){ %>
+          <%- partial('_partial/archive', {post: post, date_format: config.date_format}) %>
+      <% }) %>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -43,7 +52,7 @@ export default {
     },
 
     pageClasses () {
-      const userPageClass = this.$page.frontmatter.pageClass
+      const userPageClass = this.$frontmatter.pageClass
       return [
         {
           'no-navbar': !this.shouldShowNavbar

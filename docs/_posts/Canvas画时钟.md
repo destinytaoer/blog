@@ -12,6 +12,7 @@ copyright: true
 ---
 
 ![](http://upload-images.jianshu.io/upload_images/7295449-0b71f1c1a9625a0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ## 前言
 不管学习什么，不动手去做，永远不能熟练掌握。学习了 canvas API，会觉得只要按照直线、圆等画法去画，canvas 太简单了。可是，当你真正去画的时候，会遇到许多的问题。
 
@@ -19,7 +20,7 @@ copyright: true
 
 > 不懂 canvas 的同学，请先学习：[Canvas 画布](http://www.jianshu.com/p/587381056df4)
 
-<!--more-->
+<!-- more -->
 
 ## 一、相关几何知识
 钟面是一个圆，主要包含每个小时数字、以及刻度，它们的位置坐标应该如何计算呢？

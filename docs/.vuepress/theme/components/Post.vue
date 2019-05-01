@@ -57,10 +57,10 @@
       </p>
     </div>
 
-    <Vssue v-if="$page.frontmatter.comments"
-      :title="$page.frontmatter.title"
+    <Vssue v-if="$frontmatter.comments"
+      :title="$frontmatter.title"
       :options="{
-        labels: ['Vssue', $page.frontmatter.title]
+        labels: ['Vssue', $frontmatter.title]
       }"
     />
 
@@ -76,7 +76,7 @@ export default {
   computed: {
     lastUpdated() {
       let lastUpdated =
-        this.$page.frontmatter.update || this.$page.frontmatter.date;
+        this.$frontmatter.update || this.$frontmatter.date;
       return moment(new Date(lastUpdated)).format("YYYY-MM-DD hh:mm:ss");
     },
 
@@ -84,8 +84,8 @@ export default {
       if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
         return this.$themeLocaleConfig.lastUpdated
       }
-      if (typeof this.$site.themeConfig.lastUpdated === 'string') {
-        return this.$site.themeConfig.lastUpdated
+      if (typeof this.$themeConfig.lastUpdated === 'string') {
+        return this.$themeConfig.lastUpdated
       }
       return 'Last Updated'
     },
@@ -115,7 +115,7 @@ export default {
     },
 
     editLink () {
-      if (this.$page.frontmatter.editLink === false) {
+      if (this.$frontmatter.editLink === false) {
         return
       }
       const {
@@ -124,7 +124,7 @@ export default {
         docsDir = '',
         docsBranch = 'master',
         docsRepo = repo
-      } = this.$site.themeConfig
+      } = this.$themeConfig
 
       let path = normalize(this.$page.path)
       
@@ -139,7 +139,7 @@ export default {
     editLinkText () {
       return (
         this.$themeLocaleConfig.editLinkText
-        || this.$site.themeConfig.editLinkText
+        || this.$themeConfig.editLinkText
         || `Edit this page`
       )
     }

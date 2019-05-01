@@ -74,7 +74,7 @@ export default {
       return +match[1]
     },
     pageSize() {
-      return this.$site.themeConfig.pageSize
+      return this.$themeConfig.pageSize
     },
     posts() {
       let start = (this.index - 1) * this.pageSize

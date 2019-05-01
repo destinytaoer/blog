@@ -6,7 +6,15 @@
     <Navbar
       v-if="shouldShowNavbar"
     />
-
+    <div class="container fade">
+      <h5 class="tag-tip">
+        <i class="icon icon-list"></i>
+        目前共&nbsp;{{list.length}}&nbsp;大分类
+      </h5>
+      <div class="card-pool" >
+        <!-- {{$categories}} -->
+      </div>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -43,18 +51,22 @@ export default {
     },
 
     pageClasses () {
-      const userPageClass = this.$page.frontmatter.pageClass
+      const userPageClass = this.$frontmatter.pageClass
       return [
         {
           'no-navbar': !this.shouldShowNavbar
         },
         userPageClass
       ]
+    },
+
+    list () {
+      return this.$categories.list
     }
   },
 
   mounted () {
-    
+    console.log(this.$categories)
   },
 
   methods: {
@@ -63,4 +75,14 @@ export default {
 }
 </script>
 
-<style src="../styles/theme.styl" lang="stylus"></style>
+<style lang="stylus">
+@import '../styles/theme.styl'
+.container
+  padding-top 3.6rem
+  max-width 740px
+  margin 0 auto
+.tag-tip
+  font-size 20px
+.card-pool
+  display flex
+</style>

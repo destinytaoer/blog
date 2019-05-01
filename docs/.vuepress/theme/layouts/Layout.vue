@@ -29,12 +29,12 @@
       />
     </Sidebar>
 
-    <Home v-if="$page.frontmatter.home"/>
+    <Home v-if="$frontmatter.home"/>
     <div
       class="custom-layout"
-      v-else-if="$page.frontmatter.layout !== 'Layout'"
+      v-else-if="$frontmatter.layout !== 'Layout'"
     >
-      <component :is="$page.frontmatter.layout"></component>
+      <component :is="$frontmatter.layout"></component>
     </div>
     <Page
       v-else
@@ -114,7 +114,7 @@ export default {
     },
 
     pageClasses () {
-      const userPageClass = this.$page.frontmatter.pageClass
+      const userPageClass = this.$frontmatter.pageClass
       return [
         {
           'no-navbar': !this.shouldShowNavbar,

@@ -18,7 +18,7 @@ copyright: true
 
 > 不懂 canvas 的同学，请先学习：[Canvas 画布](http://www.jianshu.com/p/587381056df4)
 
-<!--more-->
+<!-- more -->
 
 ## 一、几何模型
 ![](http://upload-images.jianshu.io/upload_images/7295449-8fb47201f54da9f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

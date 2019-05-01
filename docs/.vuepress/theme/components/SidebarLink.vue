@@ -12,6 +12,7 @@ export default {
         $page,
         $site,
         $route,
+        $frontmatter,
         $themeConfig,
         $themeLocaleConfig
       },
@@ -30,7 +31,7 @@ export default {
       : selfActive
     const link = renderLink(h, item.path, item.title || item.path, active)
 
-    const configDepth = $page.frontmatter.sidebarDepth
+    const configDepth = $frontmatter.sidebarDepth
       || sidebarDepth
       || $themeLocaleConfig.sidebarDepth
       || $themeConfig.sidebarDepth

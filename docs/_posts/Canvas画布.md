@@ -20,7 +20,7 @@ copyright: true
 
 >[canvas 坐标系](https://codepen.io/destiny0904/pen/XzrZrv)
 
-<!--more-->
+<!-- more -->
 
 ## 二、HTML 部分
 ```
