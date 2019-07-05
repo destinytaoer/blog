@@ -6,16 +6,17 @@ set -e
 # 生成静态文件
 yarn build
 
+cd dist
+
 # 提交到历史区，$1 为运行 sh 时的第一个参数
+git init
 git add -A
 git commit -m $1
 
-# 提交到 master
-# git push origin gh-pages:gh-pages
-git push origin master
+# 如果发布到 https://<USERNAME>.github.io
+# git push -f git@github.com:destinytaoer/destinytaoer.github.io.git master
 
-# 将 dist 文件提交到 gh-pages 分支
-git subtree push --prefix dist origin gh-pages
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:destinytaoer/blog.git master:gh-pages
 
-
-exit 0
+cd -
